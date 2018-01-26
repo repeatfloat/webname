@@ -1,0 +1,27 @@
+
+.managementAddress2-top-border{border: 1px solid #ea68a2;}
+.managementAddress2-p-top-text-align{text-align: center; color: #5b0061;}
+
+
+.managementAddress2-div-right{text-align: center; border-left: 1px solid #b87bb4;}
+	.managementAddress2-p-icons-align i{color: #b87bb4;}
+	.managementAddress3-p-text-align{text-indent: 1em;}
+	.managementAddress3-p-text-align span{text-indent: 2em; display: inline-block;}
+	.item-first{color: #ae00ae;}
+	.item-not-first{color: #ae00ae;}
+	.item-first i{color: #ae00ae !important;}
+	.item-not-first i{color: #ae00ae !important;}
+	.managementAddress4-div-border{border-top: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf; padding: 0;}
+	.managementAddress5-div-position{position: relative;}
+	.managementAddress5-div-position img{position: absolute; left: 50%; bottom: -10px;
+	width: 20px; height: 20px;}
+	.managementAddress4-p-text-indent{text-align: center; margin: 0;}
+	.managementAddress4-p-text-indent i{color: #9acefb;}
+	.managementAddress6-div-footer-position{position: fixed; left: 10%;bottom: -100px;
+	background-color: #ff15ff; padding: 0; width: 80%;}
+	.managementAddress6-div-footer-position div{padding: 0;}
+	.managementAddress6-div-footer-position p{color: #fff; text-align: center;
+margin: 0; line-height: 40px; font-size: 16px;}
+
+

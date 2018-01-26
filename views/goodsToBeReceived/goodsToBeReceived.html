@@ -1,0 +1,84 @@
+<div>
+<ion-content>
+	<div class="row goodsToBeReceived-top-border">
+		<div class="col" ng-click="goodsOnclick('publicfooter.midea')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="goodsToBeReceived-p-top-text-align">待收货</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col goodsToBeReceived2-div-position">
+			<input type="text" name="" placeholder="在我的收藏里搜索">
+			<span>搜索</span>
+			<img src="./icons/index-2.png">
+		</div>
+
+		<div class="col col-20 goodsToBeReceived3-div-position-icons">
+			<i class="icon ion-ios-keypad-outline positive"></i>
+		</div>
+	</div>
+
+	<div class="row goodsToBeReceived2-p-align goodsToBeReceived5-div-border">
+		<div class="col" ng-click="goodsOnclick('allMyOrders')">
+			<p>全部</p>
+		</div>
+		<div class="col" ng-click="goodsOnclick('pendingPayment')">
+			<p>待付款</p>
+		</div>
+		<div class="col" ng-click="goodsOnclick('pendingDelivery')">
+			<p>待发货</p>
+		</div>
+		<div class="col">
+			<p class="goodsToBeReceived2-p-text-color">待收货<i class="icon ion-android-arrow-dropdown"></i></p>
+		</div>
+		<div class="col" ng-click="goodsOnclick('toBeEvaluated')">
+			<p>待评价</p>
+		</div>
+	</div>
+
+	<div ng-repeat="x in productimage track by $index" class="goodsToBeReceived3-div-bg-color">
+	  <div class="row goodsToBeReceived4-div-border">
+		<div class="col col-33">
+			<p class="goodsToBeReceived3-p-image-size"><img ng-src="{{x.image}}"></p>
+		</div>
+
+		<div class="col">
+			<p ng-bind="x.text"></p>
+			<p class="goodsToBeReceived-span-text-color" ng-bind="x.span"></p>
+			<p>{{x.textspan}} <span class="goodsToBeReceived2-span-text-color">{{x.textcolor}}</span></p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col goodsToBeReceived6-div-align">
+	  		<p class="goodsToBeReceived4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  		</p>
+	  	</div>
+	  	<div class="col goodsToBeReceived6-div-align">
+	  		<p class="goodsToBeReceived4-p-border">{{x.textborder}}</p>
+	  	</div>
+	  	<div class="col goodsToBeReceived6-div-align">
+	  		<p class="goodsToBeReceived4-p-border">{{x.textborder2}}</p>
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="row goodsToBeReceived7-div-padding">
+		<div class="col goodsToBeReceived7-div-position"><i class="goodsToBeReceived-footer-hr-position"></i></div>
+		<div class="col">
+			<p class="goodsToBeReceived5-p-footer-align">加载完成</p>
+		</div>
+		<div class="col goodsToBeReceived7-div-position"><i class="goodsToBeReceived-footer-hr-position"></i></div>
+	</div>
+	<span class="goodsToBeReceived-position-icons">
+		<i class="icon ion-arrow-up-a"></i>
+	</span>
+</ion-content>
+</div>

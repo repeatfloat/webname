@@ -1,0 +1,29 @@
+.newlyIncreasedAddress-p-text-align div{text-align: center;}
+
+.newlyIncreasedAddress2-top-border{border: 1px solid #ea68a2;background:#eee; z-index: 2; color: #59002e;
+	height: 40px; border-radius: 5px;}
+.newlyIncreasedAddress2-p-top-text-align{text-align: center; color: #5b0061; font-size: 15px;}
+
+.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align{border-bottom: 1px solid#e6e6e6; padding: 0;}
+	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align div{padding: 0;}
+	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align p{text-align: center; margin: 0; overflow: hidden;
+		height: 40px; line-height: 40px;}
+	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align p input{margin-top: 5px; width: 100%;}
+	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align h4{margin: 0; line-height: 40px;}
+	.item-input{padding: 0; position: relative; top: 5px;}
+	.select{line-height: 35px; height: 35px; position: relative !important; border: 1px solid #eee;
+		padding-right: 2px; margin: 0 auto;border-bottom: 0px solid #eee;}
+.newlyIncreasedAddress5-div-list .newlyIncreasedAddress3-p-text-color{color: #888888;}
+
+	.newlyIncreasedAddress2-div-input input{display: block;width: 100%; height: 80px;
+		border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6;
+		margin-top: 10px;}
+	.newlyIncreasedAddress3-div-position{position: relative;}
+	.newlyIncreasedAddress4-p-border{width: 20px; height: 20px; 
+		position: absolute; top: 0; left: 0; right: 0; bottom: 0;margin: auto;}
+	.newlyIncreasedAddress4-div-text p{line-height: 40px; margin: 0;}
+	.newlyIncreasedAddress5-div-button-color{background-color: #ff00ff; color: #fff;
+	margin: 0 auto; width: 80%;}
+	.button-full{margin: 0 auto!important; height: 40px; min-height: 40px;}
+	.item-last{cursor:no-drop;}
+	.item-not-last{cursor: no-drop;}

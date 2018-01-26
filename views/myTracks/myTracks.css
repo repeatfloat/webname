@@ -1,0 +1,17 @@
+.myTracks-top-border{border: 1px solid #ea68a2;background:#ddd; z-index: 2; color: #59002e;
+	height: 40px;border-radius: 5px; margin-bottom: 5px; font-size: 16px;}
+.myTracks-p-top-text-align{text-align: center; color: #5b0061;}
+
+.myTracks2-div-position{position: relative;}
+	.myTracks2-div-position input{border: 1px solid #ededed; background-color: #ededed;
+	border-radius: 20px; height: 40px; line-height: 40px; text-indent: 40px;
+	display: inline-block; width: 80%;}
+	.myTracks2-div-position img{position: absolute; width: 20px; height:20px; top:15px;
+	left: 20px; }
+	.myTracks2-p-text-align{text-align: right; padding-right: 20px;}
+	.myTracks3-div-image-size p{text-align: left; margin: 0;}
+	.myTracks3-div-image-size img{width: 100%; height: 80%; display: block; margin: 0 auto;}
+	.myTracks-icons-color{color: #f5d171; padding-left: 5px;}
+	.myTracks4-div-text-align p{text-align: center; color: #fe0000; background-color: #f2f2f2;}
+	.myTracks3-p-text-indent{text-indent: 2em;}
+	.myTracks5-div-bg-color{background-color: #f2f2f2;}

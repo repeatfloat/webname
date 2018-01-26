@@ -1,0 +1,26 @@
+
+<div>
+<ion-content>
+	<div class="row region2-top-border">
+		<div class="col">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="region2-p-top-text-align">请选择区域</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+
+	<div class="row region3-border" ng-repeat="x in region track by $index">
+
+		<div class="col" ng-bind="x.text"></div>
+		
+		<div class="col col-20 region2-icons-position">
+			<img src="./icons/province-1.png">
+		</div>
+	</div>
+</ion-content>
+</div>

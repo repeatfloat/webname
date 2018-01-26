@@ -1,0 +1,8 @@
+
+.region2-top-border{border: 1px solid #ea68a2;}
+.region2-p-top-text-align{text-align: center; color: #5b0061; font-size: 15px;}
+
+.region2-icons-position{position: relative; padding: 0;}
+	.region2-icons-position img{position: absolute; top: 0;left: 0; bottom: 0;
+	right: 0; margin:auto; width: 15px; height: 15px;}
+	.region3-border{border-bottom: 1px dashed #a7a7a7; margin:0!important; padding: 0!important;}

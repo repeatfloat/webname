@@ -1,0 +1,36 @@
+<div>
+<ion-content>
+	<div class="row myCoupon-top-border" ng-click="myCoupon('publicfooter.midea')">
+		<div class="col">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="myCoupon-p-top-text-align">我的优惠券</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row myCoupon5-div-padding" ng-repeat="x in coupon track by $index">
+		<div class="col">
+			<div class="row myCoupon2-div-padding myCoupon-content-center-bg-image">
+				<div class="col">
+					<p class="myCoupon2-p-text-top-color" ng-bind="x.text"></p>
+					<p class="myCoupon2-p-text-top-color" ng-bind="x.date"></p>
+					<p class="myCoupon2-p-text-bottom-color" ng-bind="x.textcolor"></p>
+				</div>
+
+				<div class="col col-33 myCoupon3-div-padding">
+					<p></p>
+					<p><sup>￥</sup>{{x.number}}</p>
+					<p ng-bind="x.textcoupon"></p>
+				</div>
+			</div>
+		</div>
+		<div class="col col-20 myCoupon2-div-padding myCoupon4-div-button-position">
+			<p class="button myCoupon-button-text-size" ng-bind="x.boxText"></p>
+		</div>
+	</div>
+</ion-content>
+</div>

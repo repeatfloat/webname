@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="./css/ionic.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/public.css">
+</head>
+<body>
+	<!-- 如果要用到./js/indexController.js里面$rootController服务，
+	那么就要在ui-view的后面加上ng-controller="indexController". -->
+	<div ui-view ng-controller="indexController"></div>
+
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/ionic.bundle.min.js"></script>
+	<script type="text/javascript" src="./js/ocLazyLoad.min.js"></script>
+	<script type="text/javascript" src="./module/module.js"></script>
+	<script type="text/javascript" src="./js/lazyload.config.js"></script>
+	<script type="text/javascript" src="./routes/routes.js"></script>
+	<script type="text/javascript" src="./js/localMagnifiedPicture.js"></script>
+	<script type="text/javascript" src="./js/drawALine.js"></script>
+	<script type="text/javascript" src="./server/validform.js"></script>
+	<script type="text/javascript" src="./server/tip.js"></script>
+	<script type="text/javascript" src="./server/api.js"></script>
+	<script type="text/javascript" src="./server/fomatTime.js"></script>
+	<script type="text/javascript" src="./config/config.js"></script>
+	<!-- 这个是js里面的indexController.js哦 -->
+	<script type="text/javascript" src="./js/indexController.js"></script>
+</body>
+</html>

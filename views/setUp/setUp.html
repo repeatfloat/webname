@@ -1,0 +1,47 @@
+<div>
+<ion-content>
+	<div class="row setUp-div-top-border row-wrap">
+		<div class="col setUp3-div-top-padding">
+			<p class="setUp-p-line-height" ng-click="setup('publicfooter.midea')">
+				<i class="icon ion-android-arrow-back"></i>
+			</p>
+		</div>
+			<div class="col setUp2-div-top-text-align">设置</div>
+		<div class="col"></div>
+	</div>
+
+	<div class="row row-wrap setUp-bg-color">
+		<div class="col set4-div-margin">
+			<ion-item class="item-thumbnail-left setUp-list-image">
+				<img class="setUp-image-size" src="./icons/setUp-1.png"/>
+				<p>若只如初见っ</p>
+				<p class="setUp3-p-color">LV5</p>
+			</ion-item>
+		</div>
+
+		<div class="col set2-p-text-align">
+			<p><i class="icon ion-ios-compose"></i></p>
+			<p>修改个人信息</p>
+		</div>
+	</div>
+
+		<div class="row row-wrap box-radius-overflow">
+			<div class="col box-radius" ng-repeat="div in boxarr track by $index">
+				{{div.box}}
+			</div>
+		</div>
+
+	<div class="row row-wrap">
+		<div class="col">
+			<p class="set4-p-icons-float" ng-repeat="x in textarr track by $index">
+				{{x.text}}
+				<span>{{x.icons}}</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="row row-wrap set5-div-footer-button" ng-click="setup('signIn')">
+		<div class="button">退出登录</div>
+	</div>
+</ion-content>
+</div>

@@ -1,0 +1,29 @@
+.pendingPayment-top-border{border: 1px solid #ea68a2;background:#eee; z-index: 2; color: #59002e;height: 40px;
+	 border-radius: 5px; margin-bottom: 10px;}
+.pendingPayment-p-top-text-align{text-align: center; color: #5b0061;}
+
+
+.pendingPayment2-div-position{position: relative;}
+	.pendingPayment2-div-position input{border: 1px solid #ededed; background-color: #ededed;
+	border-radius: 20px; height: 40px; line-height: 40px; text-indent: 40px; width: 80%;
+	display: inline-block; margin-right: 10px;}
+	.pendingPayment2-div-position img{position: absolute; width: 20px; height:20px; top:15px;
+	left: 20px; }
+	.pendingPayment3-div-position-icons{position: relative;}
+	.pendingPayment3-div-position-icons i{position: absolute; top: 0;left: 0; bottom: 0; right: 0;
+		margin: auto; width: 20px; height: 20px; color: #fc99fb;}
+	.pendingPayment-span-text-color{text-align: right; padding-right: 20px; color: #ff0000;}
+	.pendingPayment2-span-text-color{color: #ff0000;}
+	.pendingPayment2-p-align p{text-align: center; margin: 0;}
+	.pendingPayment2-p-text-color{color: #f001ff;}
+	.pendingPayment3-p-image-size img{width: 100%; height: 100%; display: block; margin: 0 auto;}
+	.pendingPayment3-div-bg-color{background-color: #f7f7f7; margin-bottom: 5px;}
+	.pendingPayment3-div-bg-color p{margin:0;}
+.pendingPayment4-p-border{border: 1px solid #ff0000; display: inline-block; border-radius: 5px; color: #ff0000;}
+
+.pendingPayment5-p-footer-align{text-align: center; color: #8a8a8a; line-height: 50px; margin:0;}
+	.pendingPayment7-div-position{position: relative;}
+	.pendingPayment-footer-hr-position{position: absolute; top: 30px; border: 1px solid #bfbfbf;
+		width: 100%; left: 0;}
+	.pendingPayment7-div-padding{padding: 0;}
+.footer-position-icons{position: fixed; right: 20px; bottom: 40px; color: #ffa9ff;}

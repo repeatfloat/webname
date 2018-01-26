@@ -1,0 +1,25 @@
+<div>
+<ion-content>
+	<div class="row province2-top-border">
+		<div class="col" ng-click="provinces('newlyIncreasedAddress')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="province2-p-top-text-align">选择省份</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+
+	<div class="row province3-border" ng-repeat="x in province track by $index">
+
+		<div class="col" ng-bind="x.text"></div>
+		
+		<div class="col col-20 province2-icons-position" ng-click="listclick(x.click)">
+			<img src="./icons/province-1.png"/>
+		</div>
+	</div>
+</ion-content>
+</div>

@@ -1,0 +1,17 @@
+.myCoupon-top-border{border: 1px solid #ea68a2;background:#ddd; z-index: 2; color: #59002e;
+	height: 40px;border-radius: 5px; margin-bottom: 10px; font-size: 16px;}
+.myCoupon-p-top-text-align{text-align: center; color: #5b0061;}
+
+.myCoupon5-div-padding p{margin: 0;}
+	.myCoupon-content-center-bg-image{background-image: url(../../icons/myCoupon-1.png);
+	background-repeat: no-repeat; background-size: cover;}
+	.myCoupon2-div-padding{padding: 0; margin: 2.5% 0;}
+	.myCoupon2-p-text-top-color{color: #44003e;}
+	.myCoupon2-p-text-bottom-color{color: #ffa200;}
+	.myCoupon3-div-padding{padding: 0;background-image: url(../../icons/myCoupon-2.png);
+	background-repeat: no-repeat; background-size: cover;}
+	.myCoupon3-div-padding p{color: #fff; text-align: center;}
+	.myCoupon4-div-button-position{position: relative;}
+.myCoupon-button-text-size{font-size: 14px; padding: 0; position: absolute;
+top: 0; left: 0; right: 0; bottom: 0; margin: auto !important; height: 60px; width: 100%;
+background-color: #fe5afe; color: #fff; line-height: 60px;}

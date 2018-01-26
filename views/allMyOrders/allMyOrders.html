@@ -1,0 +1,82 @@
+<div>
+<ion-content>
+	<div class="row allMyOrders-top-border">
+		<div class="col" ng-click="midea()">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="allMyOrders-p-top-text-align">我的全部订单</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col allMyOrders2-div-position">
+			<input type="text" name="" placeholder="在我的收藏里搜索"/>
+			<span>搜索</span>
+			<img src="./icons/index-2.png"/>
+		</div>
+
+		<div class="col col-20 allMyOrders3-div-position-icons">
+			<i class="icon ion-ios-keypad-outline positive"></i>
+		</div>
+	</div>
+
+	<div class="row allMyOrders2-div-p-align allMyOrders5-div-border">
+		<div class="col">
+			<p class="allMyOrders2-p-text-color">全部<i class="icon ion-android-arrow-dropdown"></i></p>
+		</div>
+		<div class="col" ng-click="pendingPayment()">
+			<p>待付款</p>
+		</div>
+		<div class="col" ng-click="pendingDelivery()">
+			<p>待发货</p>
+		</div>
+		<div class="col" ng-click="goodsToBeReceived()">
+			<p>待收货</p>
+		</div>
+		<div class="col" ng-click="toBeEvaluated()">
+			<p>待评价</p>
+		</div>
+	</div>
+
+	<div ng-repeat="x in productimage track by $index" class="allMyOrders3-div-bg-color">
+	  <div class="row allMyOrders4-div-border">
+		<div class="col col-33">
+			<p class="allMyOrders3-p-image-size"><img ng-src="{{x.image}}"/></p>
+		</div>
+
+		<div class="col">
+			<p ng-bind="x.text"></p>
+			<p class="allMyOrders-span-text-color" ng-bind="x.span"></p>
+			<p>{{x.textspan}} <span class="allMyOrders2-span-text-color">{{x.textcolor}}</span></p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  		</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders-span-text-color span">{{x.textborder}}</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders-span-text-color span">{{x.textborder2}}</p>
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="row allMyOrders7-div-footer">
+		<div class="col allMyOrders8-div-footer-position"><b></b></div>
+		<div class="col">
+			<p>加载完成</p>
+		</div>
+		<div class="col allMyOrders8-div-footer-position"><b></b></div>
+	</div>
+	<p class="position-footer"><i class="icon ion-arrow-up-a"></i></p>
+</ion-content>
+</div>

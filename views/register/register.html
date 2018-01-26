@@ -1,0 +1,103 @@
+
+<ion-content class="register-bgimage">
+<div class="row register-div-top-border row-wrap">
+		<div class="col">
+			<p ng-click="register1('login')">
+				<i class="icon ion-android-arrow-back"></i>
+			</p>
+		</div>
+		<div class="col register2-div-top-text-align" ng-click="registers()">注册</div>
+		<div class="col"></div>
+</div>
+
+<div class="bg-images-input-border">
+	<div class="row register-height">
+		<div class="col">
+			<ion-itme class="item-thumbnail-center">
+				<img class="register-image-center-size" src="./icons/midea-1.png"/>
+			</ion-itme>
+		</div>
+	</div>
+
+	<div class="row register-height">
+		<div class="col col-20"></div>
+		<div class="col">
+			<p><input type="text" name="" placeholder="请输入手机号码" ng-model="userInfo.phone" ng-keyup="isPhone()"/></p>
+		</div>
+		<div class="col col-20"></div>
+	</div>
+
+	<div class="row register-height" row-wrap>
+
+		<div class="col col-20"></div>
+		<div class="col col-33">
+			<p><input class="register-input-size" type="text" name="" placeholder="请输入验证码" ng-model="userInfo.code"/></p>
+		</div>
+
+		<div class="col col-33 register-button-line-height button-box" ng-click="getCode()" ng-show="isPass"><!-- ng-click="getCode" -->
+			<button class="button">获取验证码</button>
+		</div>
+		<div class="col"></div>
+
+	</div>
+
+<div class="row register-height" row-wrap>
+	<div class="col col-20"></div>
+		<div class="col">
+			<p><input type="password" name="" placeholder="请设置密码（6-20位数字或字母）" ng-model="userInfo.pwd"/></p>
+		</div>
+	<div class="col col-20"></div>
+</div>
+
+<div class="row register-height" row-wrap>
+	<div class="col col-20"></div>
+	<div class="col">
+		<input type="password" name="" placeholder="请确认密码(6-20位数字或字母)" ng-model="userInfo.repwd"/>
+	</div>
+	<div class="col col-20"></div>
+</div>
+
+<div class="row" row-wrap>
+	<div class="col col-20"></div>
+	<div class="col">
+		<p><button class="register-button-width" ng-click="register()">注册</button></p> <!-- ng-click="register" -->
+		<p class="register-p-position">
+			<input class="register2-input-position" type="radio" name=""/>
+			<span>阅读并同意《服务协议》</span>
+		</p>
+
+		<p>
+			已有帐号,
+			<button class="register-border"  ng-click="register1('signIn')">
+				立即登录
+			</button>
+		</p>
+	</div>
+
+	<div class="col col-20"></div>
+</div>
+</div>
+
+<div class="row" row-wrap>
+		<div class="col col-20"><p class="register2-p-hr"></p></div>
+		<div class="col register3-div-text-align">
+			使用第三方帐号登录
+		</div>
+		<div class="col col-20"><p class="register2-p-hr"></p></div>
+	</div>
+	<div class="row register4-div-text-align" row-wrap>
+		<div class="col" ng-click="register1('weChatLoggedIn')">
+		<p class="register3-p-image-size"><img src="./icons/signIn-2.png"/></p>
+		<p>微信</p>
+		</div>
+		<div class="col"  ng-click="register1('qqLogin')">
+		<p class="register3-p-image-size"><img src="./icons/signIn-3.png"/></p>
+			<p>QQ</p>
+		</div>
+		<div class="col" ng-click="register1('microBlog')">
+		<p class="register3-p-image-size"><img src="./icons/signIn-4.png"/></p>
+		<p>微博</p>
+		</div>
+	</div>
+
+</ion-content>

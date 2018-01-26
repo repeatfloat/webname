@@ -1,0 +1,84 @@
+<div>
+<ion-content>
+	<div class="row toBeEvaluated-top-border">
+		<div class="col" ng-click="toOclick('publicfooter.midea')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="toBeEvaluated-p-top-text-align">待评价</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col toBeEvaluated2-div-position">
+			<input type="text" name="" placeholder="在我的收藏里搜索">
+			<span>搜索</span>
+			<img src="./icons/index-2.png">
+		</div>
+
+		<div class="col col-20 toBeEvaluated3-div-position-icons">
+			<i class="icon ion-ios-keypad-outline positive"></i>
+		</div>
+	</div>
+
+	<div class="row toBeEvaluated2-p-align toBeEvaluated5-div-border">
+		<div class="col" ng-click="toOclick('allMyOrders')">
+			<p>全部</p>
+		</div>
+		<div class="col" ng-click="toOclick('pendingPayment')">
+			<p>待付款</p>
+		</div>
+		<div class="col" ng-click="toOclick('pendingDelivery')">
+			<p>待发货</p>
+		</div>
+		<div class="col" ng-click="toOclick('goodsToBeReceived')">
+			<p>待收货</p>
+		</div>
+		<div class="col">
+			<p class="toBeEvaluated2-p-text-color">待评价<i class="icon ion-android-arrow-dropdown"></i></p>
+		</div>
+	</div>
+
+	<div ng-repeat="x in productimage track by $index" class="toBeEvaluated3-div-bg-color">
+	  <div class="row toBeEvaluated4-div-border">
+		<div class="col col-33">
+			<p class="toBeEvaluated3-p-image-size"><img ng-src="{{x.image}}"></p>
+		</div>
+
+		<div class="col">
+			<p ng-bind="x.text"></p>
+			<p class="toBeEvaluated-span-text-color" ng-bind="x.span"></p>
+			<p>{{x.textspan}} <span class="toBeEvaluated2-span-text-color">{{x.textcolor}}</span></p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col toBeEvaluated6-div-align">
+	  		<p class="toBeEvaluated4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  		</p>
+	  	</div>
+	  	<div class="col toBeEvaluated6-div-align">
+	  		<p class="toBeEvaluated4-p-border">{{x.textborder}}</p>
+	  	</div>
+	  	<div class="col toBeEvaluated6-div-align">
+	  		<p class="toBeEvaluated4-p-border">{{x.textborder2}}</p>
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="row toBeEvaluated7-div-padding">
+		<div class="col toBeEvaluated7-div-position"><i class="toBeEvaluated-footer-hr-position"></i></div>
+		<div class="col">
+			<p class="toBeEvaluated5-p-footer-align">加载完成</p>
+		</div>
+		<div class="col toBeEvaluated7-div-position"><i class="toBeEvaluated-footer-hr-position"></i></div>
+	</div>
+	<span class="toBeEvaluated-position-icons">
+		<i class="icon ion-arrow-up-a"></i>
+	</span>
+</ion-content>
+</div>

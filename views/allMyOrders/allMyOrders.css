@@ -1,0 +1,33 @@
+.allMyOrders-top-border{border: 1px solid #ea68a2;background:#eee; z-index: 2; color: #59002e;height: 40px;
+	 border-radius: 5px; margin-bottom: 5px;}
+.allMyOrders-p-top-text-align{text-align: center; color: #5b0061;}
+
+.allMyOrders2-div-position{position: relative;}
+	.allMyOrders2-div-position input{border: 1px solid #ededed; background-color: #ededed;
+	border-radius: 20px; height: 40px; line-height: 40px; text-indent: 40px; width: 80%;
+	display: inline-block; margin-right: 10px;}
+	.allMyOrders2-div-position img{position: absolute; width: 20px; height:20px; top:15px;
+	left: 20px; }
+	.allMyOrders3-div-position-icons{position: relative;}
+	.allMyOrders3-div-position-icons i{position: absolute; top: 0;left: 0; bottom: 0; right: 0;
+		margin: auto; width: 20px; height: 20px; color: #fc99fb;}
+	.allMyOrders2-div-p-align p{text-align: center; margin: 0;}
+	.allMyOrders2-p-text-color{color: #f001ff;}
+	.allMyOrders3-p-image-size img{width: 100%; height: 100%; display: block; margin: 0 auto;}
+	.allMyOrders-span-text-color{color: #ff0000; text-align: right; padding-right: 20px;}
+	.allMyOrders2-span-text-color{color: #ff0000;}
+	.allMyOrders4-p-icons-color{line-height: 40px;}
+	.allMyOrders4-p-icons-color i{color: #c5dff7; padding-right: 10px;}
+	.span{ border: 1px solid #ff0000; padding: 0px;
+	 margin-right: 10px; line-height:30px; border-radius: 10px;
+	 display: inline-block; margin: 5px 0 !important;}
+	.allMyOrders3-div-bg-color{background-color: #f7f7f7;}
+	.allMyOrders3-div-bg-color p{margin: 0;} 
+	.allMyOrders4-div-border{border-bottom: 1px solid #cacaca;}
+	.allMyOrders5-div-border{border-bottom: 1px solid #cacaca; border-top: 1px solid #cacaca;}
+.allMyOrders6-div-align{text-align: center;}
+
+.allMyOrders7-div-footer .allMyOrders8-div-footer-position{position: relative;}
+	.allMyOrders7-div-footer p{margin: 0; text-align: center; line-height: 20px;}
+	.allMyOrders7-div-footer b{position: absolute; top:15px; left: 0; width: 100%; border: 1px solid #bfbfbf;}
+	.position-footer{position: fixed; right: 20px; bottom: 20px; color: #ffa9ff;}

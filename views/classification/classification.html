@@ -1,0 +1,83 @@
+<div class="classificationContent classification-content-bg">
+<div class="row">
+	<div class="col classification-top-border">
+	 	<p class="pclassification-header">产品分类</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col input-align">
+		<p class="classification-header-input">
+			<b ng-click="publicOnclick('publicfooter.searchPage')">
+				<img src="./icons/index-2.png"/></b>
+			<input type="text" name="" placeholder="找你想要的">
+		</p>
+	</div>
+</div>
+<div>
+
+<!-- public-aside -->
+<div class="public-content row">
+<div class="col col-position col-33">
+	<div class="row" ng-click="publicOnclick('publicfooter.classification.scheme')">
+			<ion-list>
+					<span class="{{clr.cls}}" ng-click="scheme()">护肤方案</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span ng-click="skincaresteps()" class="{{clr.cls1}}">护肤步骤</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span ng-click="starClass()" class="{{clr.cls2}}">明星系类</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>精油护肤</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>纯露单品</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>精油手工皂</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>护肤单品集</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>香薰配件</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>超值套装</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span>第二件一元</span>
+			</ion-list>
+	</div>
+	<div class="row">
+			<ion-list>
+					<span class="public-lest">特卖专场159-500元</span>
+			</ion-list>
+	</div>
+</div>
+
+<div class="view-product col" ui-view></div>
+</div>
+
+</div>
+</div>

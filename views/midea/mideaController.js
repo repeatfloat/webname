@@ -1,0 +1,60 @@
+angular.module('app')
+	.controller('mideaController', ['$scope','$state','API','$rootScope',function ($scope,$state,API,$rootScope) {
+		$scope.boxradius=[
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1},
+			{box:1}
+		]
+		$scope.signIn=function(){
+			API.fetchPost('http://127.0.0.1:9000/midea',$rootScope.userInfo.isLogin)
+			$state.go('login')
+			.then(function (data) {
+				//用户不登录状态
+				$rootScope.userInfo.isLogin = false;
+				// console.log('a==>',$rootScope.userInfo.isLogin)
+		})
+		.catch(function(err){
+			console.log(err)
+		})
+	}
+		$scope.setUp=function(){
+			$state.go('setUp')
+		}
+		$scope.myCollection=function(){
+			$state.go('myCollection')
+		}
+		$scope.myTracks=function(){
+			$state.go('myTracks')
+		}
+		$scope.myCoupon=function(){
+			$state.go('myCoupon')
+		}
+		$scope.allMyOrders=function(){
+			$state.go('allMyOrders')
+		}
+		$scope.managementAddress=function(){
+			$state.go('managementAddress')
+		}
+}])		

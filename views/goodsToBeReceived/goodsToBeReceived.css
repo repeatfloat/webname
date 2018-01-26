@@ -1,0 +1,33 @@
+
+.goodsToBeReceived-top-border{border: 1px solid #ea68a2;background:#eee; z-index: 2; color: #59002e;height: 40px;
+	 border-radius: 5px; margin-bottom: 10px;}
+.goodsToBeReceived-p-top-text-align{text-align: center; color: #5b0061;}
+
+
+.goodsToBeReceived2-div-position{position: relative;}
+	.goodsToBeReceived2-div-position input{border: 1px solid #ededed; background-color: #ededed;
+	border-radius: 20px; height: 40px; line-height: 40px; text-indent: 40px; width: 80%;
+	display: inline-block; margin-right: 10px;}
+	.goodsToBeReceived2-div-position img{position: absolute; width: 20px; height:20px; top:15px;
+	left: 20px; }
+	.goodsToBeReceived3-div-position-icons{position: relative;}
+	.goodsToBeReceived3-div-position-icons i{position: absolute; top: 0;left: 0; bottom: 0; right: 0;
+		margin: auto; width: 20px; height: 20px; color: #fc99fb;}
+	.goodsToBeReceived-span-text-color{text-align: right; padding-right: 20px; color: #ff0000;}
+	.goodsToBeReceived2-span-text-color{color: #ff0000;}
+	.goodsToBeReceived2-p-align p{text-align: center; margin: 0;}
+	.goodsToBeReceived2-p-text-color{color: #f001ff;}
+	.goodsToBeReceived3-p-image-size img{width: 100%; height: 100%; display: block; margin: 0 auto;}
+	.goodsToBeReceived3-div-bg-color{background-color: #f7f7f7; margin-bottom: 5px;}
+	.goodsToBeReceived3-div-bg-color p{margin:0;}
+	.goodsToBeReceived4-p-icons-color{margin-top: 0; line-height: 30px;}
+	.goodsToBeReceived4-p-icons-color i{color: #0f89f5;}
+.goodsToBeReceived4-p-border{border: 1px solid #ff0000; display: inline-block; border-radius: 5px; color: #ff0000;
+padding:5px;}
+
+.goodsToBeReceived5-p-footer-align{text-align: center; color: #8a8a8a; line-height: 50px; margin:0;}
+	.goodsToBeReceived7-div-position{position: relative;}
+	.goodsToBeReceived-footer-hr-position{position: absolute; top: 30px; border: 1px solid #bfbfbf;
+		width: 100%; left: 0;}
+	.goodsToBeReceived7-div-padding{padding: 0;}
+.goodsToBeReceived-position-icons{position: fixed; right: 20px; bottom: 40px; color: #ffa9ff;}

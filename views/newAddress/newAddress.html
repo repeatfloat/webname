@@ -1,0 +1,124 @@
+
+<div>
+<ion-content>
+	<div class="row newAddress2-top-border">
+		<div class="col"  ng-click="newaddress('newlyIncreasedAddress')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="newAddress2-p-top-text-align">新增收货地址</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+<div class="newAddress5-div-list">
+	<div class="row newAddress-p-text-align">
+		<div class="col col-33">
+			<h4>收货人</h4>
+		</div>
+
+		<div class="col col-40">
+			<p><input type="text" placeholder="请输入收货人姓名" value="故梦" /></p>
+		</div>
+
+		<div class="col newAddress3-p-text-color">
+			<p>
+				
+			</p>
+		</div>
+	</div>
+
+	<div class="row newAddress-p-text-align">
+		<div class="col col-33">
+			<h4>联系电话</h4>
+		</div>
+
+		<div class="col col-40">
+			<p><input type="text" placeholder="请输入联系电话" value="13910105897" /></p>
+		</div>
+
+		<div class="col newAddress3-p-text-color">
+			<p>
+			</p>
+		</div>
+	</div>
+
+	<div class="row newAddress-p-text-align">
+		<div class="col col-33">
+			<h4>所在地址</h4>
+		</div>
+
+		<div class="col col-40">
+
+		</div>
+
+		<div class="col newAddress3-p-text-color">
+			<select class="newlylncreased-select-margin">
+				<option selected>广东省</option>
+				<option ng-repeat="item in province track by $index">{{item.text}}</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="row newAddress-p-text-align">
+		<div class="col col-33">
+			
+		</div>
+
+		<div class="col col-40">
+			<p></p>
+		</div>
+
+		<div class="col newAddress3-p-text-color">
+			<select class="newlylncreased-select-margin">
+				<option selected>广州市</option>
+				<option ng-repeat="item in city track by $index">{{item.text}}</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="row newAddress-p-text-align">
+		<div class="col col-33">
+			<h4></h4>
+		</div>
+
+		<div class="col col-40">
+			<p></p>
+		</div>
+
+		<div class="col newAddress3-p-text-color">
+			<select class="newlylncreased-select-margin">
+				<option selected>天河区</option>
+				<option ng-repeat="item in region track by $index">{{item.text}}</option>
+			</select>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+	<div class="newAddress2-div-input">
+		<input type="text" name="" placeholder="详细地址"/ value="车陂地铁站附近">
+	</div>
+
+	<div class="row">
+		<div class="col newAddress4-div-text">
+			<p>设为默认地址</p>
+		</div>
+		<div class="col"></div>
+		<div class="col col-20 newAddress3-div-position">
+			<p class="newAddress4-p-border"></p>
+		</div>
+	</div>
+
+	<div class="button button-full newAddress5-div-button-color" ng-click="newaddress('managementAddress')">
+		保存
+	</div>
+</ion-content>
+</div>

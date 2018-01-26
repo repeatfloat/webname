@@ -1,0 +1,175 @@
+
+<ion-content>
+	<div class="row row-wrap midea9-border-header">
+		<div class="col">
+			<p class="nth-p-text-align">我的</p>
+		</div>
+	</div>
+
+	<div class="row row-wrap nth-div-padding">
+		<div class="col midea-bgcolor">
+			<ion-itme class="item-thumbnail-center">
+				<p><img class="nth-midea-images top-images" src="./icons/midea-1.png"></p>
+				<p class="nth2-p-text-color" ng-click="setUp()">若只如初见っ<span class="nth-span-text-color">LV5</span></p>
+				<div class="nth2-div-bgcolor"></div>
+		<div class="nth4-overflow-div">
+			<div class="nth3-div-box" ng-repeat="x in boxradius track by $index">
+			{{boxradius.box}}
+		</div>
+	</div>
+			</ion-itme>
+		</div>
+	</div>
+
+	<div class="row row-wrap nth-div-padding">
+		<div class="col" ng-click="myCollection()">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth-midea-images" src="./icons/midea-2.png">
+				<p class="nth2-p-text-color">
+					我的收藏
+				</p>
+			</ion-itme>
+		</div>
+
+			<div class="col" ng-click="myTracks()">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth-midea-images" src="./icons/midea-3.png">
+				<p class="nth2-p-text-color">
+					我的足迹
+				</p>
+			</ion-itme>
+		</div>
+
+		<div class="col" ng-click="myCoupon()">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth-midea-images" src="./icons/midea-4.png">
+				<p class="nth2-p-text-color">
+					我的优惠券
+				</p>
+			</ion-itme>
+		</div>
+	</div>
+
+	<div class="row row-wrap nth5-div-border">
+		<div class="col">
+			<p class="nth3-p-position"><img src="./icons/midea-5.png">我的订单</p>
+		</div>
+
+		<div class="col" ng-click="allMyOrders()">
+			<p>查看全部订单 <span class="nth2-span-icons-padding"><i class="icon ion-ios-arrow-right"></i></span></p>
+		</div>
+	</div>
+
+	<div class="row row-wrap nth6-div-border">
+		<div class="col">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth2-image-size" src="./icons/midea-6.png">
+				<p class="nth4-p-text-align">待付款</p>
+			</ion-itme>
+		</div>
+
+		<div class="col">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth2-image-size" src="./icons/midea-7.png">
+				<p class="nth4-p-text-align">待发货</p>
+			</ion-itme>
+		</div>
+
+		<div class="col">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth2-image-size" src="./icons/midea-8.png">
+				<p class="nth4-p-text-align">待收货</p>
+			</ion-itme>
+		</div>
+
+		<div class="col">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth2-image-size" src="./icons/midea-9.png">
+				<p class="nth4-p-text-align">待评价</p>
+			</ion-itme>
+		</div>
+
+		<div class="col">
+			<ion-itme class="item-thumbnail-top">
+				<img class="nth2-image-size" src="./icons/midea-10.png">
+				<p class="nth4-p-text-align">退款/售后</p>
+			</ion-itme>
+		</div>
+	</div>	
+
+<div>
+	<div class="row row-wrap ul-margin-top-first">
+		<div class="col">
+			<ion-item class="item-thumbnail-left nth-ino-minheigth-border">
+				<img class="nth3-image-center" src="./icons/midea-11.png">
+				<p class="nth5-p-center-ul">我的钱包</p>
+			</ion-item>
+		</div>
+
+		<div class="col col-20">
+			<i class="icon ion-ios-arrow-right"></i>
+		</div>
+	</div>
+
+
+
+	<div class="row">
+		<div class="col">
+			<ion-item class="item-thumbnail-left nth-ino-minheigth-border">
+				<img class="nth3-image-center" src="./icons/midea-12.png">
+				<p class="nth5-p-center-ul">会员中心</p>
+			</ion-item>
+		</div>
+
+		<div class="col col-20">
+			<i class="icon ion-ios-arrow-right"></i>
+		</div>
+	</div>
+
+	<div class="row row-wrap" ng-click="managementAddress()">
+		<div class="col">
+			<ion-item class="item-thumbnail-left nth-ino-minheigth-border">
+				<img class="nth3-image-center" src="./icons/midea-13.png">
+				<p class="nth5-p-center-ul">我的收货地址</p>
+			</ion-item>
+		</div>
+
+		<div class="col col-20">
+			<i class="icon ion-ios-arrow-right"></i>
+		</div>
+	</div>
+
+	<div class="row row-wrap">
+		<div class="col">
+			<ion-item class="item-thumbnail-left nth-ino-minheigth-border">
+				<img class="nth3-image-center" src="./icons/midea-14.png">
+				<p class="nth5-p-center-ul">服务与反馈</p>
+			</ion-item>
+		</div>
+
+		<div class="col col-20">
+			<i class="icon ion-ios-arrow-right"></i>
+		</div>
+	</div>
+
+	<div class="row row-wrap">
+		<div class="col">
+			<ion-item class="item-thumbnail-left nth-ino-minheigth-border">
+				<img class="nth3-image-center" src="./icons/midea-15.png">
+				<p class="nth5-p-center-ul">关于汇美舍</p>
+			</ion-item>
+		</div>
+
+		<div class="col col-20">
+			<i class="icon ion-ios-arrow-right"></i>
+		</div>
+	</div>
+</div>
+
+	<div class="nth8-div-fotter-position">
+		<p class="nth6-p-position-footer" ng-click="signIn()">退出登录</p>
+	</div>
+	<div class="row midea-footer">
+		<div class="col"></div>
+	</div>
+</ion-content>

@@ -1,0 +1,29 @@
+html,body{height: 100%; width: 100%;}
+.content-bgimage{width: 100%; height: 100%;}
+	.content-bgcolor{background-image: url(../../image/signIn-1.jpg)
+	; background-size: cover; background-repeat: no-repeat; height: 100%;}
+	.nth-div-top-border{border: 1px solid #ea68a2; background:rgba(239,127,189,0.5); z-index: 2; color: #59002e;}
+	.nth2-div-top-text-align{text-align: center; color: #5b0061;}
+	.nth-image-center-size{width: 80%; display: block; margin:5% auto;}
+	.nth2-image-center-size{width: 50px; display: block; margin: 0 auto;
+		height: 50px; border-radius: 30px; animation: bgcolor 10s linear 0s infinite ;}
+	.nth-p-center-input input{display: inline-block; width: calc(100% - 47px);
+		border: 1px solid #ea68a2;text-indent: 1em; margin: 10% 0;}
+	.nth-p-center-input span{color: #5a002e;}
+	.nth3-div-button p{text-align: center; line-height: 40px; display: inline-block;
+		width: 60%; background-color: #9b0050; color: #edd8e1; border-radius: 10px;}
+	.nth3-div-button{text-align: center;}
+	.nth4-div-text-align{text-align: right; color: #ff0084;}
+	.nth5-div-text-align div{text-align: center;}
+	.nth5-div-text-align div p{margin: 0;}
+	.nth2-p-hr{border-top: 1px solid #7d0000; width: 100%; margin-top: 14px;}
+	.nth6-div-text-align{text-align: center; line-height: 30px;}
+	.nth7-div-margin{margin: 2% 0 10%;}
+	.nth8-div-margin{margin: 0 0 2%;}
+.nth3-p-image-size img{width: 20px; height: 20px; display: block; margin: 0 auto;}
+
+
+
+@keyframes bgcolor {
+				from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}}

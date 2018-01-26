@@ -1,0 +1,72 @@
+<div>
+<ion-content>
+	<div class="row myCollection-top-border" ng-click="mycollection('publicfooter.midea')">
+		<div class="col">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="myCollection-p-top-text-align">我的收藏</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row myCollection7-div-margin">
+		<div class="col myCollection2-div-position">
+			<input type="text" name="" placeholder="在我的收藏里搜索"/>
+			<span>搜索</span>
+			<img src="./icons/index-2.png"/>
+		</div>
+
+		<div class="col col-20 myCollection3-div-position-icons">
+			<i class="icon ion-ios-keypad-outline positive"></i>
+		</div>
+	</div>
+
+	<div class="row myCollection6-div-p-text-align" ng-repeat="x in product track by $index">
+		<div class="col col-20 myCollection4-div-image-size">
+			<img ng-src="{{x.image}}"/>
+		</div>
+
+		<div class="col">
+
+			<p>{{x.text}}</p>
+
+			<div class="row">
+				<div class="col">
+					<p class="myCollection2-p-text-align">{{x.span}}
+					<span class="spanBorder-color">{{x.spanBorder}}</span>
+					</p>
+				</div>
+
+				<div class="col myCollection5-div-icons-color">
+					<p><i class="icon ion-ios-star"></i></p>
+					<p>{{x.spanText}}</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<p>
+						<span class="productTextcolor">{{x.productText}}</span>
+						<span>{{x.textColor}}</span>
+					</p>
+				</div>
+
+				<div class="col col-33">
+					<i class="icon ion-android-cart productTextcolor"></i>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col"></div>
+		<div class="col col-20 footer-icons-color">
+			<p><i class="icon ion-arrow-up-a"></i></p>
+		</div>
+	</div>
+</ion-content>
+</div>

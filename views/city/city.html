@@ -1,0 +1,25 @@
+<div>
+<ion-content>
+	<div class="row city2-top-border">
+		<div class="col">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="city2-p-top-text-align">请选择城市</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+
+	<div class="row city3-border" ng-repeat="x in city track by $index">
+
+		<div class="col" ng-bind="x.text"></div>
+		
+		<div class="col col-20 city2-icons-position">
+			<img src="./icons/province-1.png">
+		</div>
+	</div>
+</ion-content>
+</div>

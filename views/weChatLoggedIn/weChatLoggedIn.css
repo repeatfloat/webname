@@ -1,0 +1,12 @@
+.weChat-div-top-border{border: 1px solid #ea68a2;  background:rgba(239,127,189,0.5); z-index: 2; color: #59002e;}
+.weChat2-div-top-text-align{text-align: center;}
+
+.weChatLoggedIn-bgimage{background-image: url(../../image/signIn-1.jpg); background-size: cover; background-repeat: no-repeat;}
+	.weChat-image-size-top img{width: 60px; height: 60px; display: block;margin: 0 auto;}
+	.weChat-image-size-bottom img{width: 100%; height: 20px;display: block;}
+.weChat3-div-center-padding{padding-top: 30%;}
+
+.weChat4-div-footer{width: 90%; margin: 10% auto; border-top: 1px solid #ff00ff;}
+.weChat4-div-footer p{text-align: center; color: #59002e; margin: 10% 0;}
+.weChat5-div-p-margin p{margin:10% 0;}
+.weChat-button-color{height: 40px; color: #fff; background-color: #df0073; padding: 0 20px; width: 60%; border-radius: 10px;}

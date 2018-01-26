@@ -1,0 +1,54 @@
+<div>
+<ion-content>
+	<div class="row myTracks-top-border" ng-click="myTracks('publicfooter.midea')">
+		<div class="col">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="myTracks-p-top-text-align">我的足迹</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col myTracks2-div-position">
+			<input type="text" name="" placeholder="搜索日期"/>
+			<span>搜索</span>
+			<img src="./icons/index-2.png"/>
+		</div>
+	</div>
+
+	<div class="row myTracks5-div-bg-color">
+		<div class="col"></div>
+		<div class="col">
+			<p>足迹（12）</p>
+		</div>
+		<div class="col">
+			<p class="myTracks2-p-text-align">编辑</p>
+		</div>
+	</div>
+
+<div class="myTracks3-div-image-size" ng-repeat="x in dateProduct track by $index">
+		<p class="myTracks3-p-text-indent" ng-bind="x.date"></p>
+
+	<div class="row myTracks4-div-text-align">
+		<div class="col">
+			<p><img ng-src="{{x.imades}}"/></p>
+			<p>{{x.text}}<span class="myTracks-icons-color"><i class="icon ion-ios-star-outline"></i></span></p>
+		</div>
+
+		<div class="col">
+			<p><img ng-src="{{x.imades2}}"/></p>
+			<p>{{x.text2}}<span class="myTracks-icons-color"><i class="icon ion-ios-star-outline"></i></span></p>
+		</div>
+
+		<div class="col">
+			<p><img ng-src="{{x.imades3}}"/></p>
+			<p>{{x.text3}}<span class="myTracks-icons-color"><i class="icon ion-ios-star-outline"></i></span></p>
+		</div>
+	</div>
+</div>
+</ion-content>
+</div>

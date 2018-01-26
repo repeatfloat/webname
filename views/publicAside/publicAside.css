@@ -1,0 +1,4 @@
+.col-position{position: fixed; top: 100px; left: 0; width: 30%; line-height: 44px; overflow: hidden;
+background-color: #fff;}
+.public-text-color{color: #ff00ff;}
+.public-lest{height: 44px; overflow: hidden; display: block;}

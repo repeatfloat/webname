@@ -1,0 +1,89 @@
+<div class="content-bgimage content-bgcolor">
+	<div class="row nth-div-top-border row-wrap">
+		<div class="col"><p><i class="icon ion-android-arrow-back"></i></p></div>
+		<div class="col nth2-div-top-text-align">登录</div>
+		<div class="col"></div>
+	</div>
+
+<div class="">
+	<div>
+		<div class="row row-wrap">
+			<div class="col">
+				<ion-itme class="item-thumbnail-center">
+					<img class="nth-image-center-size" src="./icons/signIn-1.png">
+				</ion-itme>
+			</div>
+		</div>
+
+		<div class="row row-wrap">
+			<div class="col">
+				<ion-itme class="item-thumbnail-center">
+					<img class="nth2-image-center-size" src="./icons/midea-1.png">
+				</ion-itme>
+			</div>
+		</div>
+
+		<div class="row row-wrap">
+			<div class="col col-20"></div>
+			<div class="col">
+				<p class="nth-p-center-input">
+					<span>帐号:</span>
+					<input type="text" placeholder="用户名/邮箱/手机号码"
+					ng-model="userInfo.phone"/>
+				</p>
+			</div>
+			<div class="col col-20"></div>
+		</div>
+
+		<div class="row row-wrap">
+			<div class="col col-20"></div>
+			<div class="col">
+				<p class="nth-p-center-input">
+				<span>密码:</span>
+				<input type="password" placeholder="请输入密码"
+				ng-model="userInfo.pwd"/>
+				</p>
+			</div>
+			<div class="col col-20"></div>
+		</div>
+	</div>
+
+	<div class="nth3-div-button" ng-click="usersignin()">
+		<p>
+			登录
+		</p>
+	</div>
+
+	<div class="row row-wrap nth7-div-margin">
+		<div class="col col-33 nth4-div-text-align" ng-click="signin('register')">
+			注册
+		</div>
+		<div class="col"></div>
+		<div class="col col-50" ng-click="signin('resetPassword')">
+			忘记密码？
+		</div>
+	</div>
+
+	<div class="row row-wrap nth8-div-margin">
+		<div class="col col-20"><p class="nth2-p-hr"></p></div>
+		<div class="col nth6-div-text-align">
+			使用第三方帐号登录
+		</div>
+		<div class="col col-20"><p class="nth2-p-hr"></p></div>
+	</div>
+	<div class="row row-wrap nth5-div-text-align">
+		<div class="col" ng-click="signin('weChatLoggedIn')">
+		<p class="nth3-p-image-size"><img src="./icons/signIn-2.png"></p>
+		<p>微信</p>
+		</div>
+		<div class="col" ng-click="signin('qqLogin')">
+		<p class="nth3-p-image-size"><img src="./icons/signIn-3.png"></p>
+			<p>QQ</p>
+		</div>
+		<div class="col" ng-click="signin('microBlog')">
+		<p class="nth3-p-image-size"><img src="./icons/signIn-4.png"></p>
+		<p>微博</p>
+		</div>
+	</div>
+</div>
+</div>

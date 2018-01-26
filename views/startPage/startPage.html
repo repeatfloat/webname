@@ -1,0 +1,6 @@
+<ion-slide-box auto-play="slide.autoPlay"
+	slide-interval="{{slide.intervalTime}}" show-pager="{{slide.showPager}}">
+	<ion-slide ng-repeat="item in data track by $index">
+		<img class="full-image" ng-src="{{item.img}}"  ng-click="signIn()"/>
+	</ion-slide>
+</ion-slide-box> 

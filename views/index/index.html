@@ -1,0 +1,231 @@
+
+	<ion-content>
+
+	<div class="row index1-header-image">
+
+		<div class="col col-20">
+			<p class="index-p-first-image"><img src="./icons/index-1.png"></p>
+			<p>扫一扫</p>
+		</div>
+
+		<div class="col index-div-position">
+			<img src="./icons/index-2.png">
+			<input class="input" type="text" name="" placeholder="普罗旺斯薰衣草系列面膜">
+		</div>
+
+		<div class="col col-20">
+			<p class="index-right-text-size">搜索<img class="right-image-margin" src="./icons/index-3.png"></p>
+		</div>
+
+	</div>
+	<ion-slide-box  does-continue="{{slide.doesContinue}}"
+		auto-play="slide.autoPlay" 
+		slide-interval="{{slide.intervalTime}}"
+		show-pager="{{slide.showPager}}"
+		ng-click="index('productDetailsPage')">
+
+		<ion-slide>
+			<div class="banner-image">
+				<img ng-src="{{data.data[0].imgurl}}" />
+			</div>
+		</ion-slide>
+
+		<ion-slide>
+			<div class="banner-image">
+				<img ng-src="{{data.data[1].imgurl}}" />
+			</div>
+		</ion-slide>
+
+	<ion-slide>
+		<div class="banner-image index-banner-nth3">
+			<img ng-src="{{data.data[2].imgurl}}" />
+			<div class="banner-nth3-text">
+				<p class="banner-nth1-p">PARFUM BERGER</p>
+				<p class="banner-nth2-p">您好！首次见面</p>
+				<p class="banner-nth3-p">我们带来充满法式香气的问候</p>
+				<p class="banner-position"><b></b>来自法国的简雅主义家居香薰</p>
+			</div>
+		</div>
+	</ion-slide>
+
+	</ion-slide-box>
+
+<div class="row">
+	<div class="col">
+		<div class="col-demo" ng-click="index('productList')">
+			<ion-list>
+				<ion-item class="item-thumbnail-top index-list-image">
+					<img src="./icons/index-4.png">
+					<span>全部产品</span>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+
+	<div class="col col-bgcolor">
+		<div class="col-demo">
+			<ion-list>
+				<ion-item class="item-thumbnail-top index-list-image">
+					<img src="./icons/index-5.png">
+					<span>会员中心</span>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-demo">
+			<ion-list>
+				<ion-item class="item-thumbnail-top index-list-image">
+					<img src="./icons/index-6.png">
+					<span>每日签到</span>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+
+	<div class="col">
+		<div class="col-demo">
+			<ion-list>
+				<ion-item class="item-thumbnail-top index-list-image">
+					<img src="./icons/index-7.png">
+					<span>品牌故事</span>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+</div>
+
+<div>
+
+<div class="index-aside-content">
+	<div class="aside-content-bgcolor">
+	<div class="aside-content-top">
+		<h3>汇美舍尊享礼遇</h3>
+		<div><p><span class="aside-top-lift-hr"></span>
+			<font>个ID限一份，不叠加，以实际收到的礼包为准</font>
+			<span class="aside-top-right-hr"></span></p>
+		</div>
+	</div>
+<div class="overflow">
+	<div class="aside-div-left">
+		<p>先领券再购物</p>
+		<div><p class="div-left-border">￥<span>20</span>满268使用</p></div>
+		<div><p class="div-left-border">￥<span>50</span>满598使用</p></div>
+	</div>
+	<div class="aside-div-right">
+		<img src="./icons/index-8.png">
+		<p>实付￥199送</p>
+		<p>菁华乳/17g+</p>
+		<p>水润面膜3片+水润眼膜1盒</p>
+	</div>
+</div>
+<div class="overflow overflow-border-top">
+	<div class="aside-div-left">
+		<img src="./icons/index-9.png">
+		<p>实付￥298送</p>
+		<p>保加利亚玫瑰体验礼盒</p>
+	</div>
+	<div class="aside-div-right">
+		<img src="./icons/index-10.png">
+		<p>实付￥598送</p>
+		<p>玫瑰乳木果莹润沐浴露490g</p>
+	</div>
+</div>
+</div>
+<div class="aside-bgcolor">
+<div class="aside-content-top">
+		<h3 class="aside-text-color-center">镇店之宝热卖排行榜</h3>
+		<div><p><span class="aside-top-lift-hr"></span>
+			<font class="aside-text-color-center">爱上汇美舍实现美肌愿望  从这里开始</font>
+			<span class="aside-top-right-hr"></span></p>
+		</div>
+</div>
+	<div class="aside-position">
+		<p class="aside-text-bgcolor">CFA国际芳疗师亲研</p>
+		<img src="./icons/index-11.png">
+		<p class="aside-font-size">水润清颜面膜贴/10片</p>
+		<p>花萃补水  温和滋润</p>
+		<p><span>￥69</span><font>立即购买></font></p>
+	</div>
+</div>
+
+<div class="overflow overflow-border-top">
+	<div class="aside-div-left aside-text-color">
+		<img src="./icons/index-12.png">
+		<div class="text-border">
+			<p class="aside-font-size">普罗旺斯醒目薰衣草精油/10ml</p>
+			<p class="aside-font-b"><b>平衡舒缓  淡化痘印</b></p>
+			<p class="p"><span class="aside-size-text">￥138</span><font class="aisde-border">立即购买></font></p>
+		</div>
+	</div>
+	<div class="aside-div-right aside-text-color">
+		<img src="./icons/index-13.png">
+		<p class="aside-font-size">保加利亚大马士革玫瑰精油/10ml</p>
+		<p class="aside-font-b"><b>弹润白皙  水润雪肌</b></p>
+		<p><span>￥298</span><font class="aisde-border">立即购买></font></p>
+	</div>
+</div>
+<div class="overflow overflow-border-top">
+	<div class="aside-div-left aside-text-color">
+		<img src="./icons/index-14.png">
+		<div class="text-border">
+			<p class="aside-font-size">汇美舍玫瑰水润纯露/220ml</p>
+			<p class="aside-font-b"><b>保湿滋润  提亮肤色</b></p>
+			<p class="p"><span class="aside-size-text">￥59</span><font class="aisde-border">立即购买></font></p>
+		</div>
+	</div>
+	<div class="aside-div-right aside-text-color">
+		<img src="./icons/index-15.png">
+		<p class="aside-font-size">汇美舍玫瑰檀香丝柔润滑眼霜/25g</p>
+		<p class="aside-font-b"><b>滋润眼周  减淡眼纹</b></p>
+		<p class="aside-size-text"><span>￥169</span><font class="aisde-border">立即购买></font></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col">
+		<div class="col-demo aside-col-demo">
+			<ion-list>
+				<ion-item class="item-thumbnail-left index-list-image-left">
+					<img src="./icons/index-16.png">
+					<p>玫瑰檀香丝柔润滑套装/3件</p>
+					<p><b>弹润紧致  平滑淡纹</b></p>
+					<p><span class="text-color-aisde">￥325</span><font class="border-color-aside">立即购买></font></p>
+					<ul class="aisde-ul-top">
+						<li>熟龄肌必备</li>
+						<li>珍添玫瑰精华</li>
+						<li>珍添檀香精华</li>
+					</ul>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col">
+		<div class="col-demo aside-col-demo">
+			<ion-list>
+				<ion-item class="item-thumbnail-right index-list-image-left">
+					<img src="./icons/index-16.png">
+					<p>玫瑰水润护肤礼盒/3件</p>
+					<p><b>深层补水  提亮肤色</b></p>
+					<p><span class="text-color-aisde">￥159</span><font class="border-color-aside">立即购买></font></p>
+					<ul class="aisde-ul-bottom">
+						<li>熟龄肌必备</li>
+						<li>珍添玫瑰精华</li>
+						<li>珍添檀香精华</li>
+					</ul>
+				</ion-item>
+			</ion-list>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="row index-footer">
+	<div class="col">
+		
+	</div>
+</div>
+</ion-content>

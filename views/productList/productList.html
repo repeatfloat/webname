@@ -1,0 +1,145 @@
+<ion-content>
+<div class="productList-content">
+	<div class="isearchPage-list-image">
+	<i class="icon ion-arrow-left-c" ng-click="productlists('publicfooter.index')"></i>
+	<p>产品列表</p>
+  </div>
+  <div class="productList-header">
+  		<div class="row productlist-div-padding">
+  		<div class="col productlist-p-position">
+  			<p class="productList-text">
+				<b ng-click="productlists('productDetailsPage')">
+					<img src="./icons/index-2.png">
+				</b>
+				<input type="text" name="" placeholder="普罗旺斯薰衣草系列面膜">
+			</p>
+  		</div>
+  		<div class="col col-33">
+  			<p class="productList-header-right">
+			<span ng-click="productlists()">
+				搜索
+				<i class="icon ion-ios-keypad-outline positive position-icons"></i>
+			</span>
+		</p>
+  		</div>
+		
+		</div>
+		<div class="row productlists2-div-text-align">
+			<div class="col">
+				<p class="productList-content-color">综合<i class="icon ion-arrow-down-b productList-content-color"></i></p>
+			</div>
+			<div class="col">
+				<p>销量</p>
+			</div>
+			<div class="col">
+				<p><i class="icon ion-funnel productList-content-color"></i>按条件筛选</p>
+			</div>
+		</div>
+  </div>
+
+  <div class="row pdtlist6-div-size" ng-repeat="item in productarr track by $index">
+  	<div class="col col-25">
+  		<img ng-src="{{item.image}}">
+  	</div>
+  	<div class="col">
+  		<p>{{item.text}}</p>
+  		<p class="product-text-color">
+  			<span>{{item.span}}</span>
+  			<span>
+  				<font class="{{item.classarr}}">{{item.span4}}</font><i class="{{item.cls}}"></i>
+  			</span>
+  		</p>
+  		<p>
+  			<span class="product-text-align-color">{{item.span2}}</span>
+  			<span class="product-text-align">{{item.span3}}</span>
+  		</p>
+  	</div>
+  </div>
+
+  <!-- <div class="row">
+	  <div class="col">
+	  	<ion-list>
+	  		<ion-item class="item-thumbnail-left productList-list-image">
+				<img src="./icons/productList-1.png">
+				<p>
+					汇美舍（PrettyValley）普罗旺斯真实薰衣草精油/10ml 单方精油 精油护肤</p>
+				<p>
+					运费<span>￥8</span>
+					<i class="icon ion-ios-star-outline bg-color"></i>
+				</p>
+				<p>
+					<span class="text-color">
+						<span class="font-size">￥</span>
+					138.00
+					</span>
+					<font>
+					999人付款
+					</font>
+					<i class="icon ion-android-cart bg-color-bottom"></i>
+				</p>
+			</ion-item>
+	  	</ion-list>
+	  </div>
+  </div>
+  <div class="row">
+	  <div class="col">
+	  	<ion-list>
+	  		<ion-item class="item-thumbnail-left productList-list-image">
+					<img src="./icons/productList-2.png">
+					<p>【前300名半价】汇美舍普罗旺斯薰衣草护肤礼盒套装补水舒缓肌肤</p>
+					<p>运费<span>￥8</span><i class="icon ion-ios-star-outline bg-color"></i></p>
+					<p><span class="text-color"><span class="font-size">￥</span>169.00</span><font>666人付款</font><i class="icon ion-android-cart bg-color-bottom"></i></p>
+			</ion-item>
+	  	</ion-list>
+	  </div>
+  </div>
+
+  <div class="row">
+	  <div class="col">
+	  	<ion-list>
+	  		<ion-item class="item-thumbnail-left productList-list-image">
+					<img src="./icons/productList-3.png">
+					<p>汇美舍单方精油普罗旺斯真实薰衣草精油10ml 舒缓修护淡化痘印</p>
+					<p>满99元<span class="border-color">包邮</span><i class="icon ion-ios-star-outline bg-color"></i></p>
+					<p><span class="text-color"><span class="font-size">￥</span>294.00</span><font>888人付款</font><i class="icon ion-android-cart bg-color-bottom"></i></p>
+			</ion-item>
+	  	</ion-list>
+	  </div>
+  </div>
+
+  <div class="row">
+	  <div class="col">
+	  	<ion-list>
+	  		<ion-item class="item-thumbnail-left productList-list-image">
+					<img src="./icons/productList-4.png">
+					<p>汇美舍普罗旺斯薰衣草菁华凝露90g 清爽补水保湿细致毛孔精华露</p>
+					<p>在线下单<span class="border-color">包邮</span><i class="icon ion-ios-star-outline bg-color"></i></p>
+					<p><span class="text-color"><span class="font-size">￥</span>158.00</span><font>555人付款</font><i class="icon ion-android-cart bg-color-bottom"></i></p>
+			</ion-item>
+	  	</ion-list>
+	  </div>
+  </div>
+
+  <div class="row">
+	  <div class="col">
+	  	<ion-list>
+	  		<ion-item class="item-thumbnail-left productList-list-image">
+					<img src="./icons/productList-5.png">
+					<p>汇美舍面霜普罗旺斯薰衣草菁华面霜50g 滋润保湿淡化细纹细致毛孔 </p>
+					<p>在线下单<span class="border-color">包邮</span><i class="icon ion-ios-star-outline bg-color"></i></p>
+					<p><span class="text-color"><span class="font-size">￥</span>198.00</span><font>333人付款</font><i class="icon ion-android-cart bg-color-bottom"></i></p>
+			</ion-item>
+	  	</ion-list>
+	  </div>
+  </div>
+ -->
+  <div class="position-content-hr">
+  	<b class="content-hr hr-left"></b>
+  	没有更多宝贝了
+  	<b class="content-hr hr-right"></b>
+  </div>
+  <b class="position-icons-bottom">
+  	<i class="icon ion-arrow-up-a"></i>
+  </b>
+</div>
+</ion-content>

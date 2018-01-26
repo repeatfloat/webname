@@ -1,0 +1,18 @@
+.microBlog-div-top-border{border: 1px solid #ea68a2; background:rgba(239,127,189,0.5); z-index: 2; color: #59002e;}
+.microBlog2-div-top-text-align{text-align: center; color: #5b0061;}
+
+.content-center-bg-image{background-image: url(../../image/signIn-1.jpg); background-repeat: no-repeat;
+	background-size: cover;}
+	.nth-image-size{width:90%; height: 40px; display: block; margin: 10% auto; border-radius: 10px;}
+	.microBlog3-div-position{position: relative;}
+	.microBlog2-image-size{width: 50px; height: 50px; margin:auto; position: absolute;
+		top: 0; left: 0; right: 0; bottom: 0;}
+	.microBlog4-div-margin p{margin: 0; margin:10% 0; font-size: 12px; text-align: center;}
+	.microBlog5-div-margin-center{margin: 5% auto 10%;}
+	.nth-p-text-color{position: relative; line-height: 20px; text-indent: 30px; border-top: 1px solid #920783;}
+	.nth-p-text-color img{width: 20px; height: 20px; position: absolute; top: 0; left: calc(50% - 72px);}
+	.nth-p-text-color span{color: #74007b;}
+	.nth-p-text-color font{color: #ae6200;}
+	.microBlog-button-color{background-color: #ba0083; color: #fff; padding: 5px 10px;}
+	.microBlog2-p-text-color{color: #fe00b3;}
+.microBlog2-p-text-colo i{color: #fe00b3;}

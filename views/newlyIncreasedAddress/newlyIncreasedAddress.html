@@ -1,0 +1,137 @@
+<div>
+<ion-content>
+	<div class="row newlyIncreasedAddress2-top-border">
+		<div class="col" ng-click="newAddressonclick('managementAddress')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col" ng-click="newAddressonclick('newAddress')">
+			<p class="newlyIncreasedAddress2-p-top-text-align">新增收货地址</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+<div class="newlyIncreasedAddress5-div-list">
+	<div class="row newlyIncreasedAddress-p-text-align">
+		<div class="col col-33">
+			<h4>收货人</h4>
+		</div>
+
+		<div class="col col-40">
+			<p>
+				<input type="text" placeholder="请输入收货人姓名"
+				ng-model="userInfo.username"/>
+			</p>
+		</div>
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<p>
+				
+			</p>
+		</div>
+	</div>
+
+	<div class="row newlyIncreasedAddress-p-text-align">
+		<div class="col col-33">
+			<h4>联系电话</h4>
+		</div>
+
+		<div class="col col-40">
+			<p>
+				<input type="text" placeholder="请输入电话号码"
+				ng-model="userInfo.phone"/>
+			</p>
+		</div>
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<p>
+			</p>
+		</div>
+	</div>
+
+	<div class="row newlyIncreasedAddress-p-text-align">
+		<div class="col col-33">
+			<h4>所在地址</h4>
+		</div>
+
+		<div class="col col-33">
+
+		</div>
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<label class="item item-input">
+				<select class="select">
+				    <option selected>请选择省份</option>
+				    <option ng-repeat="item in province track by $index">{{item.text}}</option>
+				</select>
+			</label>
+		</div>
+	</div>
+
+	<div class="row newlyIncreasedAddress-p-text-align">
+		<div class="col col-33">
+			
+		</div>
+
+		<div class="col col-33">
+			<p></p>
+		</div>
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<label class="item item-input">
+				<select class="select">
+				    <option selected>请选择城市</option>
+				    <option ng-repeat="item in city track by $index">
+				    	{{item.text}}
+					</option>
+				</select>
+			</label>
+		</div>
+	</div>
+
+	<div class="row newlyIncreasedAddress-p-text-align">
+		<div class="col col-33">
+			<h4></h4>
+		</div>
+
+		<div class="col col-33">
+			<p></p>
+		</div>
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<label class="item item-input">
+				<select class="select">
+				    <option selected>请选择区域</option>
+				    <option ng-repeat="item in region track by $index">{{item.text}}</option>
+				</select>
+			</label>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+	<div class="newlyIncreasedAddress2-div-input">
+		<input type="text" name="" placeholder="详细地址">
+	</div>
+
+	<div class="row">
+		<div class="col newlyIncreasedAddress4-div-text">
+			<p>设为默认地址</p>
+		</div>
+		<div class="col"></div>
+		<div class="col col-20 newlyIncreasedAddress3-div-position">
+			<p class="newlyIncreasedAddress4-p-border"><input type="checkbox" value="" /></p>
+		</div>
+	</div>
+
+	<div class="button button-full newlyIncreasedAddress5-div-button-color" ng-click="setaddress()">
+		保存
+	</div>
+</ion-content>
+</div>

@@ -1,0 +1,28 @@
+
+.setUp-div-top-border{border: 1px solid #ea68a2; padding: 0;}
+	.setUp3-div-top-padding{padding: 0;}
+	.setUp-p-line-height{padding: 0; line-height: 40px; margin: 0; color: #5b0061;}
+	.setUp2-div-top-text-align{text-align: center; color: #5b0061; line-height: 40px; padding: 0;}
+	.box-radius-overflow{height: 10px !important; overflow: hidden !important; margin-top: -5px !important;
+	 padding: 0px !important;}
+	.box-radius{border: 1px solid #fed4ef; width: 5px; height:20px; border-radius: 50%;
+		z-index: 2; background-color: #fff;}
+
+.set4-div-margin{padding: 10px 0 0;}
+	.setUp-bg-color{background-color: #ffddf2;}
+	.set4-div-margin p{line-height: 25px; margin: 0; background-color: #ffddf2; color: #cf0298;}
+	.item-thumbnail-left > img:first-child{top: 0; left: 0;}
+	.setUp-image-size{width:50px !important; height: 50px !important; border-radius: 50%!important;
+	 border: 1px solid #000 !important; animation: boxcolor 10s linear 0s infinite alternate;}
+	.setUp-list-image{padding: 0px 0 0 55px; border: 0px; min-height: 50px;}
+	.set2-p-text-align p{text-align: center; margin: 0; line-height: 25px; color: #ff00ea;}
+	.setUp3-p-color{color: #87701c;}
+	.set4-p-icons-float{border-bottom: 1px solid #f2f2f2; margin: 0; line-height: 40px;}
+	.set4-p-icons-float span{float: right; padding-right: 10px;}
+	.set5-div-footer-button div{width: 80%; line-height: 40px; background-color: #ff15ff;
+		color: #fff; min-height: 40px; margin: 0 auto;}
+
+	@keyframes boxcolor {
+			from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}}
+			

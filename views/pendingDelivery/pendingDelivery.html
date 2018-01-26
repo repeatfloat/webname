@@ -1,0 +1,84 @@
+<div>
+<ion-content>
+	<div class="row pendingDelivery-top-border">
+		<div class="col" ng-click="pendingprducts('publicfooter.midea')">
+			<i class="icon ion-android-arrow-back"></i>
+		</div>
+
+		<div class="col">
+			<p class="pendingDelivery-p-top-text-align">待发货</p>
+		</div>
+
+		<div class="col"></div>
+	</div>
+
+	<div class="row">
+		<div class="col pendingDelivery2-div-position">
+			<input type="text" name="" placeholder="在我的收藏里搜索">
+			<span>搜索</span>
+			<img src="./icons/index-2.png">
+		</div>
+
+		<div class="col col-20 pendingDelivery3-div-position-icons">
+			<i class="icon ion-ios-keypad-outline positive"></i>
+		</div>
+	</div>
+
+	<div class="row pendingDelivery2-p-align pendingDelivery5-div-border">
+		<div class="col">
+			<p ng-click="pendingprducts('allMyOrders')">全部</p>
+		</div>
+		<div class="col" ng-click="pendingprducts('pendingPayment')">
+			<p>待付款</p>
+		</div>
+		<div class="col">
+			<p class="pendingDelivery2-p-text-color">待发货<i class="icon ion-android-arrow-dropdown"></i></p>
+		</div>
+		<div class="col" ng-click="pendingprducts('goodsToBeReceived')">
+			<p>待收货</p>
+		</div>
+		<div class="col" ng-click="pendingprducts('toBeEvaluated')">
+			<p>待评价</p>
+		</div>
+	</div>
+
+	<div ng-repeat="x in productimage track by $index" class="pendingDelivery3-div-bg-color">
+	  <div class="row pendingDelivery4-div-border">
+		<div class="col col-33">
+			<p class="pendingDelivery3-p-image-size"><img ng-src="{{x.image}}"></p>
+		</div>
+
+		<div class="col">
+			<p ng-bind="x.text"></p>
+			<p class="pendingDelivery-span-text-color" ng-bind="x.span"></p>
+			<p>{{x.textspan}} <span class="pendingDelivery2-span-text-color">{{x.textcolor}}</span></p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  		</p>
+	  	</div>
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery4-p-border">{{x.textborder}}</p>
+	  	</div>
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery4-p-border">{{x.textborder2}}</p>
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="row pendingDelivery7-div-padding">
+		<div class="col pendingDelivery7-div-position"><i class="pendingDelivery-footer-hr-position"></i></div>
+		<div class="col">
+			<p class="pendingDelivery5-p-footer-align">加载完成</p>
+		</div>
+		<div class="col pendingDelivery7-div-position"><i class="pendingDelivery-footer-hr-position"></i></div>
+	</div>
+	<span class="pendingDelivery-position-icons">
+		<i class="icon ion-arrow-up-a"></i>
+	</span>
+</ion-content>
+</div>

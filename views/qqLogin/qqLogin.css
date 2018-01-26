@@ -1,0 +1,43 @@
+.qqLogin-div-top-border{border: 1px solid #ea68a2; background:rgba(239,127,189,0.5); z-index: 2; color: #59002e;}
+.qqLogin2-div-top-text-align{text-align: center;}
+
+.qqlogin-bg-image{background-image: url(../../image/signIn-1.jpg);
+ background-size: cover; background-repeat: no-repeat;}
+	.nth3-div-margin-top{ width: 80%; margin: 30% auto 15%; border: 1px solid #ff0088;
+		animation: borderColor 8s linear 0s infinite alternate;}
+	.qqlogin-p-icos-align{text-align: center;}
+	.qqlogin2-p-image-align img{display: block; margin: 0 auto; width: 120px;
+	height: 20px;}
+	.bg-color-top{background-color:rgba(239,127,189,0.5);}
+	.nth-ion-image-size img{width: 30px; height: 30px; position: absolute;top: 0;
+	left: 10px; border-radius: 50%;}
+	.nth-ion-image-size p{color: #93014c; line-height:30px; margin: 0;
+	 position: relative; text-indent: 50px;}
+	.qqlogin-ul-color li{color: #f8b0e1; text-align: center; margin: 5px 0;}
+	.nth3-p-text-color{color: #59002e; text-align: center;}
+	.qqlogin3-div-bgcolor{background-color: rgba(254,241,250,0.7);}
+	.nth4-div-padding{padding: 0;}
+	.qqLogin-button{width: 80%; margin: 0 auto; display: inline-block; padding: 5px;
+		background-color: #c70067; color: #fff; height: 40px; border-radius: 10px;}
+	.qqLogin4-footer-div{text-align: center;}
+	.qqLogin4-footer-div{color: #f3047f;}
+	@keyframes borderColor {
+			0% {
+				border: 1px solid #fcf1fa;
+			}
+
+			25% {
+				border-top: 1px solid #f8b1e1;
+			}
+
+			50% {
+				border-right: 1px solid #5f2b47;
+			}
+
+			75% {
+				border-bottom: 1px solid #ea68a2;
+			}
+
+			100% {
+				border-left: 1px solid #5f2b47;
+			}}
