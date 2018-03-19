@@ -14,14 +14,16 @@
 	.managementAddress4-div-border{border-top: 1px solid #bfbfbf;
 	border-bottom: 1px solid #bfbfbf; padding: 0;}
 	.managementAddress5-div-position{position: relative;}
-	.managementAddress5-div-position img{position: absolute; left: 50%; bottom: -10px;
+	.managementAddress5-div-position img{position: absolute; left:calc(50% - 10px); bottom: -10px;
 	width: 20px; height: 20px;}
 	.managementAddress4-p-text-indent{text-align: center; margin: 0;}
 	.managementAddress4-p-text-indent i{color: #9acefb;}
-	.managementAddress6-div-footer-position{position: fixed; left: 10%;bottom: -100px;
-	background-color: #ff15ff; padding: 0; width: 80%;}
+	.managementAddress6-div-footer-position{position: fixed; left: 10%;bottom: -100px; background-color: #ff15ff; padding: 0; width: 80%;}
 	.managementAddress6-div-footer-position div{padding: 0;}
 	.managementAddress6-div-footer-position p{color: #fff; text-align: center;
-margin: 0; line-height: 40px; font-size: 16px;}
-
+	margin: 0; line-height: 40px; font-size: 16px;}
+	.managementAddress7-div-position{position: fixed; left: 10%;bottom: -150px; background-color: #ff15ff; padding: 0; width: 80%;}
+	.managementAddress7-div-div-position{padding: 0;}
+	.managementAddress7-div-button-position{color: #fff; text-align: center;
+	margin: 0; line-height: 40px; font-size: 16px;}
 

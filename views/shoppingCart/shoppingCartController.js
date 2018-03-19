@@ -1,18 +1,23 @@
 angular.module('app')
-	.controller('shoppingCartController', ['$scope','$state', function ($scope,$state) {
+	.controller('shoppingCartController', ['$scope','$state','API',function ($scope,$state,API) {
 		$scope.settlement=function(url){
 			$state.go(url)
 		}
-
-		$scope.shopping=[
+		API.fetchGet('http://127.0.0.1:9000/index')
+			.then(function (data) {
+			$scope.data = data;
+				console.log(data)
+				$scope.shopping=[
 			{	
 				image:'./icons/shoppingCart-1.png',
 				text:'汇美舍（PrettyValley）普罗旺斯真实薰衣草精油/10ml 单方精油 	精油护肤',
 				span:'运费',
 				span2:'￥8',
 				textright:'x1',
-				textcenter:'￥138.00',
+				textcenter:138.00,
+				check:false,
 				footertext:'999人付款',
+				datas: data.data.clsify[16].pid
 			},
 			{	
 				image:'./icons/shoppingCart-2.png',
@@ -20,8 +25,10 @@ angular.module('app')
 				span:'运费',
 				span2:'￥8',
 				textright:'x2',
-				textcenter:'￥169.00',
+				textcenter:169.00,
+				check:false,
 				footertext:'666人付款',
+				datas:data.data.clsify[17].pid
 			},
 			{	
 				image:'./icons/shoppingCart-3.png',
@@ -30,8 +37,10 @@ angular.module('app')
 				span2:'包邮',
 				cls:'shoppingCart-text-border',
 				textright:'x1',
-				textcenter:'￥294.00',
+				textcenter:294.00,
+				check:false,
 				footertext:'888人付款',
+				datas:data.data.clsify[18].pid
 			},
 			{	
 				image:'./icons/shoppingCart-4.png',
@@ -40,8 +49,10 @@ angular.module('app')
 				span2:'包邮',
 				cls:'shoppingCart-text-border',
 				textright:'x3',
-				textcenter:'￥158.00',
+				textcenter:158.00,
+				check:false,
 				footertext:'555人付款',
+				datas:data.data.clsify[19].pid
 			},
 			{	
 				image:'./icons/shoppingCart-5.png',
@@ -50,9 +61,56 @@ angular.module('app')
 				span2:'包邮',
 				cls:'shoppingCart-text-border',
 				textright:'x1',
-				textcenter:'￥198.00',
+				textcenter:198.00,
+				check:false,
 				footertext:'333人付款',
+				datas:data.data.clsify[20].pid
 			},
-		]
+		];		
+			})
+
+			.catch(function (err) {
+				// tip.loadTips.hideLoading();
+				console.log(err);
+			})
+
+			API.fetchGet('http://127.0.0.1:9000/shoppingCart')
+			.then(function (dete) {
+				$scope.dete=dete;
+				console.log(dete)
+			})
+			.catch(function (err) {
+				console.log(err);
+			});
+
+			$scope.shopping2 = function (stateName,id) {
+			$state.go(stateName, {id: id});
+		}
+		
+		$scope.sum=0;
+		//全选金额
+		$scope.shoppingSum=function(){
+			console.log($scope.sum)
+			$scope.sum=0;
+			for(var i=0;i<$scope.shopping.length;i++){
+				var t=0;
+				if($scope.shopping[i].check){
+					t=$scope.shopping[i].textcenter
+					$scope.sum+=t
+					console.log("$scope.sum==>",$scope.sum)
+				}	
+			}
+		};
+		$scope.changeCheckbox = function(bool){
+			$scope.shoppingSum();
+			for(var i=0;i<$scope.shopping.length;i++){
+				 if(!$scope.shopping[i].check){
+				 	console.log(!$scope.shopping[i].check)
+					$scope.allCheck = false;
+					return;
+				}		
+			}
+			$scope.allCheck = true;
+		};
 	}])
 		

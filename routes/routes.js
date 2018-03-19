@@ -144,7 +144,7 @@ angular.module('app')
 				}
 			})
 			.state('productDetailsPage', {
-				url: '/productDetailsPage',
+				url: '/productDetailsPage/:id',
 				templateUrl: './views/productDetailsPage/productDetailsPage.html',
 				controller: 'productDetailsPageController',
 				resolve: {

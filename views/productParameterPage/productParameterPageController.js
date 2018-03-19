@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('productParameterPageController', ['$scope','$state', function ($scope,$state) {
+	.controller('productParameterPageController', ['$scope','$state','API', function ($scope,$state,API) {
 		$scope.banner={
 			doesContinue:true,
 			autoPlay:true,
@@ -17,7 +17,23 @@ angular.module('app')
 	$scope.productList=function(url){
 		$state.go(url)
 	}
+			
+	API.fetchGet('http://127.0.0.1:9000/index')
+			.then(function (data) {
+				
+				$scope.data = data;
+				console.log(data)
+			})
+			.catch(function (err) {
+				// tip.loadTips.hideLoading();
+				console.log(err);
+			})
+	$scope.productList2=function(url,id){
+
+		$state.go(url,{id:id});	
+	}
 	$scope.productEvaluation=function(){
 		$state.go('productEvaluation')
 	}
+	
 	}])

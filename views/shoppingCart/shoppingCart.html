@@ -1,6 +1,5 @@
-
 <ion-content>
-	<div class="row title shoppingCart2-top-bgcolor">
+<div class="row title shoppingCart2-top-bgcolor">
 		<div class="col">
 			<p>购物车(5)</p>
 		</div>
@@ -23,7 +22,7 @@
 
 	<div class="row shoppingCart-p-margin" ng-repeat="item in shopping track by $index">
 		<div class="col col-20 shoppingCart-images">
-			<img ng-src="{{item.image}}">
+			<img ng-src="{{item.image}}" ng-click="shopping2('productDetailsPage',item.datas)"/>
 		</div>
 		<div class="col">
 			<div class="row shoppingCart-border-bottom-top">
@@ -32,18 +31,18 @@
 						{{item.text}}
 					</p>
 					<p>
-						{{item.span}} <span class="{{item.cls}} margin-left">{{item.span2}}</span>
+						{{item.span}} <span class="{{item.cls}} shoppingCart-margin-left">{{item.span2}}</span>
 						<i class="icon ion-android-star-outline icons-color text-padding-left"></i>
 					</p>
 					<p class="shoppingCart-text-align">{{item.textright}}</p>
 					<p>
 						<span class="shoppingCart-color-text">{{item.textcolor}}</span>
-						<font class="shoppingCart-color-text">{{item.textcenter}}</font>{{item.footertext}}
+						<font class="shoppingCart-color-text">￥{{item.textcenter}}</font>{{item.footertext}}
 					</p>
 				</div>
 				<div class="col col-20 icons-position">
 					<p>
-				       <input type="checkbox" value="" />
+				       <input type="checkbox" ng-model="item.check" ng-click="changeCheckbox()"/>
 				    </p>
 				</div>
 			</div>
@@ -64,8 +63,8 @@
 
 	<div class="row shoppingCart-image-size">
 		<div class="col">
-			<p><img src="./icons/shoppingCart-6.png"></p>
-			<p>汇美舍保加利亚玫瑰补水套装补水护肤品套装</p>
+			<p><img ng-src="{{dete.data.shopp[0].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[10].pid)"/></p>
+			<p>{{dete.data.shopp[0].sname}}</p>
 			<p class="icons-align">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
@@ -75,13 +74,13 @@
 			<p class="icons-align">
 				<i class="icon ion-ios-cart-outline"></i>
 			</p>
-			<p><span class="product-text-color">￥915.00</span>333人付款</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[0].price}}</span>333人付款</p>
 		</div>
 
 		<div class="col">
-			<p><img src="./icons/shoppingCart-7.png"></p>
+			<p><img ng-src="{{dete.data.shopp[1].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[11].pid)"/></p>
 			<p>
-				汇美舍玫瑰檀香丝柔润滑套装保湿补水平滑提亮套装 
+				{{dete.data.shopp[1].sname}} 
 			</p>
 			<p class="icons-align">
 				<i class="icon ion-android-star-outline"></i>
@@ -92,48 +91,14 @@
 			<p class="icons-align">
 				<i class="icon ion-ios-cart-outline"></i>
 			</p>
-			<p><span class="product-text-color">￥434.00</span>666人付款</p>
-		</div>
-	</div>
-
-	<div class="row shoppingCart-image-size">
-		<div class="col">
-			<p><img src="./icons/shoppingCart-8.png"></p>
-			<p>汇美舍精油玫瑰丰润提升精油50ml紧致提升弹性弹润胸部</p>
-			<p class="icons-align">
-				<i class="icon ion-android-star-outline"></i>
-			</p>
-			<p>
-				<span>在线下单</span><font>包邮</font>
-			</p>
-			<p class="icons-align shoppingCart-color">
-				<i class="icon ion-ios-cart-outline"></i>
-			</p>
-			<p><span class="product-text-color">￥390.00</span>333人付款</p>
-		</div>
-
-		<div class="col">
-			<p><img src="./icons/shoppingCart-9.png"></p>
-			<p>
-				汇美舍保加利亚大马士革玫瑰精油5ML单方精油香薰滋养
-			</p>
-			<p class="icons-align">
-				<i class="icon ion-android-star-outline"></i>
-			</p>
-			<p>
-				<span>在线下单</span><font>包邮</font>
-			</p>
-			<p class="icons-align shoppingCart-color">
-				<i class="icon ion-ios-cart-outline"></i>
-			</p>
-			<p><span class="product-text-color">￥498.00</span>999人付款</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[1].price}}</span>666人付款</p>
 		</div>
 	</div>
 
 	<div class="row shoppingCart-image-size">
 		<div class="col">
-			<p><img src="./icons/shoppingCart-10.png"></p>
-			<p>汇美舍茉莉玫瑰籽水漾舒缓爽肤液150ml爽肤水舒缓</p>
+			<p><img ng-src="{{dete.data.shopp[2].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[12].pid)"/></p>
+			<p>{{dete.data.shopp[2].sname}}</p>
 			<p class="icons-align">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
@@ -143,13 +108,13 @@
 			<p class="icons-align shoppingCart-color">
 				<i class="icon ion-ios-cart-outline"></i>
 			</p>
-			<p><span class="product-text-color">￥102.00</span>333人付款</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[2].price}}</span>333人付款</p>
 		</div>
 
 		<div class="col">
-			<p><img src="./icons/shoppingCart-11.png"></p>
+			<p><img ng-src="{{dete.data.shopp[3].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[13].pid)"/></p>
 			<p>
-				汇美舍普罗旺斯薰衣草菁华液160ml 补水保湿滋润控油爽
+				{{dete.data.shopp[3].sname}}
 			</p>
 			<p class="icons-align">
 				<i class="icon ion-android-star-outline"></i>
@@ -160,18 +125,54 @@
 			<p class="icons-align shoppingCart-color">
 				<i class="icon ion-ios-cart-outline"></i>
 			</p>
-			<p><span class="product-text-color">￥110.00</span>666人付款</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[3].price}}</span>999人付款</p>
+		</div>
+	</div>
+
+	<div class="row shoppingCart-image-size">
+		<div class="col">
+			<p><img ng-src="{{dete.data.shopp[4].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[14].pid)"/></p>
+			<p> {{dete.data.shopp[4].sname}}</p>
+			<p class="icons-align">
+				<i class="icon ion-android-star-outline"></i>
+			</p>
+			<p>
+				<span>在线下单</span><font>包邮</font>
+			</p>
+			<p class="icons-align shoppingCart-color">
+				<i class="icon ion-ios-cart-outline"></i>
+			</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[4].price}}</span>333人付款</p>
+		</div>
+
+		<div class="col">
+			<p><img ng-src="{{dete.data.shopp[5].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[15].pid)"/></p>
+			<p>
+				{{dete.data.shopp[5].sname}}
+			</p>
+			<p class="icons-align">
+				<i class="icon ion-android-star-outline"></i>
+			</p>
+			<p>
+				<span>在线下单</span><font>包邮</font>
+			</p>
+			<p class="icons-align shoppingCart-color">
+				<i class="icon ion-ios-cart-outline"></i>
+			</p>
+			<p><span class="product-text-color">￥{{dete.data.shopp[5].price}}</span>666人付款</p>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="col">
 			<p class="footer-input">
-				<label>全选</label><input type="checkbox" value="" />
+				<!-- <label>全选</label><input type="checkbox" ng-model="isSelect" ng-change="changeModel(isSelect)"/> -->
 			</p>
 		</div>
 		<div class="col">
-			<p>合计：￥0</p>
+			<p>合计： <input type="" name="" style="display: inline-block; width: 40px;"
+			 ng-model="sum">
+			</p>
 		</div>
 		<div class="col">
 			<p class="footer-background-color" ng-click="settlement('publicfooter.settlement')">
@@ -183,4 +184,5 @@
 	<div class="row shoppingcart-footer">
 		<div class="col"></div>
 	</div>
+
 </ion-content>

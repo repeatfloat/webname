@@ -19,13 +19,20 @@ angular.module('app')
 		}
 
 		$scope.register = function () {
-			// tip.loadTips.showLoading();
-			if (!isValid()) {return};
+			tip.loadTips.showLoading();
+			if (!isValid()) {return tip.loadTips.hideLoading();};
 			$scope.userInfo.registerTime = formatTime.format(new Date(), 'yyyy-MM-dd hh:mm:ss');
-			API.fetchPost('http://127.0.0.1:9000/register',$scope.userinfo)
+			API.fetchPost('http://127.0.0.1:9000/register',$scope.userInfo)
 			.then(function(data){
-				console.log("data==>",data)
-				
+				if(data.data.statusCode == 201 || data.data.statusCode == 202){
+					tip.showTip(data.data.msg);
+					tip.loadTips.hideLoading();
+					return false;
+				}
+				tip.showTip(data.data.msg);
+				tip.loadTips.hideLoading();
+				$state.go('login')
+				tip.loadTips.hideLoading();
 			})
 			.catch(function(err){
 					console.log('err==>',err)

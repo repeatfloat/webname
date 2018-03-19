@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('pendingPaymentController', ['$scope','$state', function ($scope,$state) {
+	.controller('pendingPaymentController', ['$scope','$state','API','$rootScope','tip',function ($scope,$state,API,$rootScope,tip) {
 			$scope.publicprducts=function(href){
 				$state.go(href)
 			}
@@ -23,5 +23,21 @@ angular.module('app')
 					textborder:'查看物流',
 					textborder2:'提醒发货'
 				},
-				]
+				];
+
+				API.fetchGet('http://127.0.0.1:9000/pendingPayment')
+				// console.log($rootScope.shoppss)
+				.then(function (data) {
+				$scope.code = data.data;
+				// console.log($scope.code);
+				})
+
+				$scope.payment = function (item) {
+					// tip.showTip('购买成功 亲请支付');
+				$state.go('publicfooter.compiler',{item: item});
+				API.fetchGet('http://127.0.0.1:9000/compiler',item)
+					.then(function () {
+					})
+				}
+			
 			}])

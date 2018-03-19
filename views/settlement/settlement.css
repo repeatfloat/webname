@@ -47,7 +47,8 @@
 	.shoppingCart-color i{color: #ff0000;}
 	.product-text-color{color: #fe0000; padding-right: 20px;}
 	.footer-background-color{background-color: #e60012; color: #fff;
-		text-align: center;}
-	.settlement-footer-label{line-height: 20px;}
+		text-align: center; height: 100%; line-height: 26px;}
+	.settlement-footer-label{height: 100%; line-height: 26px;}
 	.settlement-footer-label label{padding-right: 10px;}
 .settlement-footer{height: 50px;}
+.settlement-input{width: 50px; margin-left: 5px; border-radius: 5px;}

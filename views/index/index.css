@@ -29,15 +29,15 @@ width: 20px;}
 	.index-list-image>img{width: 30px; height: 30px; position: absolute; top: 0;
 	left:calc(50% - 15px);}
 	.index-list-image span{display: inline-block; margin-top: 15px; text-align: center;}
-
+	.aside-top-right-hr{margin-left:5px;}
 	.aside-content-bgcolor{background: #4f4141;}
 	.index-aside-content .aside-content-top p,h3{text-align: center;margin: 0; color: #fff;
 	line-height: 44px;}
 	.aside-content-top div{margin: 0; padding: 0; text-align: center;}
 	.aside-content-top div p{position: relative; display: inline-block; padding: 0 20px;}
-	.aside-content-top p font{display: inline-block; line-height: 44px; margin: 0;}
-	.aside-content-top p span{border-top: 2px solid #fff; position: absolute; width: 20px;
-	top: 21px;}
+	.aside-content-top p font{display: inline-block; line-height: 44px; margin: 0; font-size: 12px;}
+	.aside-content-top p span{border-top: 2px solid #fff; position: absolute; width: 15px;
+	top: 22px;}
 	.aside-top-lift-hr{left:0;}
 	.aside-div-left{width:calc(50% - 1px); margin:0; padding: 0; text-align: center;
 	display: inline-block; float: left; border-right: 1px solid #fff;}
@@ -76,7 +76,7 @@ width: 20px;}
 	.aisde-ul-top{position: absolute; top:5px; left:90px;}
 	.aisde-ul-top li,.aisde-ul-bottom li{list-style: none; width: 30px; height:30px; border:1px solid #f0909b; color: #f0909b;
 		line-height:30px; overflow: hidden; text-align: center; border-radius: 50%; font-size: 12px;}
-    .aisde-ul-bottom{position: absolute; top: 5px; right:90px;}
+    .aisde-ul-bottom{position: absolute; top: 5px; right:95px;}
  		.indxe-footer-color{color: #ff0000;}
  .item p{font-size: 12px;}
 

@@ -1,4 +1,3 @@
-<div>
 <ion-content>
 	<div class="row pendingDelivery-top-border">
 		<div class="col" ng-click="pendingprducts('publicfooter.midea')">
@@ -50,26 +49,68 @@
 
 		<div class="col">
 			<p ng-bind="x.text"></p>
-			<p class="pendingDelivery-span-text-color" ng-bind="x.span"></p>
-			<p>{{x.textspan}} <span class="pendingDelivery2-span-text-color">{{x.textcolor}}</span></p>
+			<p class="pendingDelivery-span-text-color">
+				<span class="pendingDelivery9-text-color">已付款</span>	
+			</p>
+			<p> 
+				<span class="pendingDelivery2-span-text-color">{{x.textspan}}</span> 
+				<span class="pendingDelivery2-span-text-color">{{x.textcolor}}</span>
+			</p>
 		</div>
 	  </div>
 
 	  <div class="row">
 	  	<div class="col pendingDelivery6-div-align">
 	  		<p class="pendingDelivery4-p-icons-color">
-	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  			<i class="icon ion-ios-trash"></i>
+	  			<span class="pendingDelivery2-span-text-color">{{x.textfooter}}</span> 
 	  		</p>
 	  	</div>
 	  	<div class="col pendingDelivery6-div-align">
-	  		<p class="pendingDelivery4-p-border">{{x.textborder}}</p>
+	  		<p class="pendingDelivery9-text-color">{{x.textborder}}</p>
 	  	</div>
 	  	<div class="col pendingDelivery6-div-align">
-	  		<p class="pendingDelivery4-p-border">{{x.textborder2}}</p>
+	  		<p class="pendingDelivery9-text-color">{{x.textborder2}}</p>
 	  	</div>
 	  </div>
 	</div>
+	 <!-- 改动 -->
+	<div ng-repeat="item in pending.pending track by $index" class="pendingDelivery3-div-bg-color">
+	  <div class="row">
+		<div class="col col-33">
+			<p class="pendingDelivery3-p-image-size"><img ng-src="{{item.imgurl}}"></p>
+		</div>
 
+		<div class="col">
+			<p>{{item.sname}}清爽补水保湿细致毛孔精华,舒缓修护淡化痘印</p>
+			<p class="pendingDelivery-span-text-color">
+				<span class="pendingDelivery9-text-color">待发货</span>	
+			</p>
+			<p>
+				<span class="pendingDelivery2-span-text-color">共{{item.numprice}}件商品 合计：</span><span class="pendingDelivery2-span-text-color">￥{{item.numprice*item.price}}</span>
+			</p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>
+	  			<span class="pendingDelivery2-span-text-color">删除订单</span> 
+	  		</p>
+	  	</div>
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery9-text-color">查看物流</p>
+	  	</div>
+	  	<div class="col pendingDelivery6-div-align">
+	  		<p class="pendingDelivery9-text-color">提醒发货</p>
+	  	</div>
+	  </div>
+	</div> 
+
+
+
+	
 	<div class="row pendingDelivery7-div-padding">
 		<div class="col pendingDelivery7-div-position"><i class="pendingDelivery-footer-hr-position"></i></div>
 		<div class="col">
@@ -81,4 +122,3 @@
 		<i class="icon ion-arrow-up-a"></i>
 	</span>
 </ion-content>
-</div>

@@ -43,7 +43,7 @@
 				</div>
 				<div class="col col-20 icons-position">
 					<div>
-				       <input type="checkbox" value="" checked="{{item.checked}}"/>
+				       <input type="checkbox" value="" ng-model="item.check" ng-click="changeCheckbox()"/>
 				    </div>
 				</div>
 			</div>
@@ -168,11 +168,11 @@
 	<div class="row">
 		<div class="col">
 			<p class="settlement-footer-label">
-				<label>全选</label><input type="checkbox" value="" checked />
+				<label>全选</label><input type="checkbox" ng-model="allCheck"   ng-click="allSelect(allCheck)"/>
 			</p>
 		</div>
 		<div class="col">
-			<p>合计：￥0</p>
+			<p>合计<input class="settlement-input" type="" name="" ng-model="sum" ></p>
 		</div>
 		<div class="col">
 			<p class="footer-background-color">

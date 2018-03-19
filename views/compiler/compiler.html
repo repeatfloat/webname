@@ -1,159 +1,61 @@
 
 <ion-content>
-	<div class="bar bar-header compiler2-bgcolor-top">
-		<h3 class="title">购物车(5)</h3>
+	<div>
+		<h3 class="compiler-header-align">购物车(5)</h3>
 	</div>
-	<div class="row nav">
-		<div class="col">
-			<p class="nav-input">
-				<i class="icon ion-android-search"></i>
-				<input type="text" placeholder="在我的购物车里搜索">
-				<span>搜索</span>
-			</p>
+
+
+
+	<div class="row compiler-p-margin" ng-repeat="data in data.compiler track by $index">
+		<div class="col col-33 compiler2-images">
+			<img ng-src="{{data.imgurl}}">
 		</div>
-	</div>	
+
+		<div class="col col-33 compiler3-text-align">
+			<div class="row compiler4-price compiler-text-border">
+				价格:{{data.price}}
+			</div>
+			<div class="row compiler5-number">
+					<div class="row compiler6-padding-div">
+						<div class="col compiler7-border-box compiler-text-border" ng-click="subtrack($index)">-</div>
+						<div class="col col-33 compiler6-padding-div">
+							<input class="compiler8-number-input" type="text" ng-model="data.numprice"> 
+						</div>
+						<div class="col compiler7-border-box compiler-text-border" ng-click="pule($index)">+</div>
+					</div>
+			</div>
+
+			<div class="row compiler9-div-padding compiler-text-border">
+				<div class="col compiler10-padding-number">净含量：10ml
+					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="col col-20 compiler6-padding-div compiler11-position-seles">
+			<input class="compiler12-position-option" type="checkbox" ng-model="data.check" ng-click="changeCheckbox()">
+		</div>
+
+	</div>
+
+	
+
 
 	<div class="row">
 		<div class="col">
-			<p class="text-align-right" ng-click="compiler()">编辑</p>
-		</div>
-	</div>
-
-	<div class="row compiler-p-margin compiler-text-align">
-		<div class="col col-33.3333 compiler-images">
-			<img src="./icons/shoppingCart-1.png">
-		</div>
-
-		<div class="col compiler-text-align">
-			<div class="row">
-				<div class="col">
-					<div class="row">
-						<div class="col border-box" ng-click="subtrack()">-</div>
-						<div class="col col-33.3333">
-							<input class="number-input" type="text" ng-model="sum"> 
-						</div>
-						<div class="col border-box" ng-click="pule()">+</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col border-box">净含量：10ml
-					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="row compiler-p-margin compiler-text-align-nth2">
-		<div class="col col-33.3333 compiler-images">
-			<img src="./icons/shoppingCart-2.png">
+			<p class="compiler16-position-price">
+				<span class="compiler15-price-text">全选:</span><input class="compiler14-check-option" type="checkbox" name="" ng-model="allCheck"   ng-click="allSelect(allCheck)">
+			</p>
 		</div>
 		<div class="col">
-			<div class="row">
-				<div class="col">
-					<div class="row">
-						<div class="col border-box" ng-click="subtrack1()">-</div>
-						<div class="col col-33.3333">
-							<input class="number-input" type="text" ng-model="sum1"> 
-						</div>
-						<div class="col border-box" ng-click="pule1()">+</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col border-box">净含量：10ml
-					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
-
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="row compiler-p-margin compiler-text-align-nth3">
-		<div class="col col-33.3333 compiler-images">
-			<img src="./icons/shoppingCart-3.png">
-		</div>
-
-		<div class="col">
-			<div class="row">
-				<div class="col">
-					<div class="row">
-						<div class="col border-box" ng-click="subtrack2()">-</div>
-						<div class="col col-33.3333">
-							<input class="number-input" type="text" ng-model="sum2"> 
-						</div>
-						<div class="col border-box" ng-click="pule2()">+</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col border-box">
-					净含量：10ml
-					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
-
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<div class="row compiler-p-margin compiler-text-align-nth4">
-		<div class="col col-33.3333 compiler-images">
-			<img src="./icons/shoppingCart-4.png">
+			<p>合计:<input class="compiler13-price-option" type="" name="" ng-model="sum"></p>
 		</div>
 		<div class="col">
-			<div class="row">
-				<div class="col">
-					<div class="row">
-						<div class="col border-box" ng-click="subtrack3()">-</div>
-						<div class="col col-33.3333">
-							<input class="number-input" type="text" ng-model="sum3"> 
-						</div>
-						<div class="col border-box" ng-click="pule3()">+</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col border-box">
-					净含量：10ml
-					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
-
-				</div>
-			</div>
+			<p class="footer-background-color" ng-click="compiles()">
+				结算
+			</p>
 		</div>
-
 	</div>
-
-	<div class="row compiler-p-margin compiler-text-align-nth5">
-		<div class="col col-33.3333 compiler-images">
-			<img src="./icons/shoppingCart-5.png">
-		</div>
-
-		<div class="col">
-			<div class="row">
-				<div class="col">
-					<div class="row compiler-text-align">
-						<div class="col border-box" ng-click="subtrack4()">-</div>
-						<div class="col col-33.3333">
-							<input class="number-input" type="text" ng-model="sum4"> 
-						</div>
-						<div class="col border-box" ng-click="pule4()">+</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col border-box compiler-text-align">
-					净含量：10ml
-					<i class="nth-icons-padding icon ion-ios-arrow-down"></i>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
 
 	<div>
 		<div class="compiler-position">
@@ -269,23 +171,6 @@
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col">
-			<p>
-				<span>
-				<i class="icon ion-android-radio-button-off"></i>
-				</span>全选
-			</p>
-		</div>
-		<div class="col">
-			<p>合计：￥0</p>
-		</div>
-		<div class="col">
-			<p class="footer-background-color">
-				结算
-			</p>
-		</div>
-	</div>
 	<div class="row compiler-footer">
 		<div class="col"></div>
 	</div>

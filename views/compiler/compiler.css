@@ -1,30 +1,25 @@
 
-.compiler2-bgcolor-top{background:#eee; z-index: 2; color: #59002e;
-	font-size: 16px; border-radius: 5px; border:1px solid #ff0000;}
-.nav-input{width: 100%; margin: 0 auto; line-height: 44px; margin: 0;
-	 	padding-top: 44px; text-align: center; position: relative;}
-	.nav-input input{display: inline-block; width: 60%;
-		background-color: #ededed; border: 1px solid #ededed;
-	 	border-radius: 15px; text-indent: 2em;}
-	.nav-input span{display: inline-block; text-indent:50px;}
-	.text-align-right{text-align: right; background-color: #ddd; margin: 0;}
-.nav-input i{position:absolute; top: 61px; left: 20px; line-height:0;}
+.compiler-header-align{display: block; width: 100%; text-align: center; border: 1px solid #ddd; font-size: 16px; height: 44px; line-height: 44px;}
 
-.compiler-images {position: relative;}
-.compiler-images img{width: 70%; position: absolute;top: 0;left: 0; bottom: 0; right: 0; margin: auto;}
+.compiler2-images{padding: 0; height: 100px;}
+.compiler2-images img{width: 100%; display: block; height: 100%;}
 
-
-
-		
-	.compiler-p-margin div{margin: 0; text-align: center; line-height: 34px;}
-		/*.nth-icons-padding{padding-left: 30px;}*/
-		.compiler-text-align,.compiler-text-align-nth1,.compiler-text-align-nth2,.compiler-text-align-nth3,.compiler-text-align-nth4 div{
-		text-align: center;}
-		.number-input{width: 100%; border: 1px solid #ddd; line-height: 34px;
-			text-align: center;}
-	.border-box{border: solid #bfbfbf 1px;}
-
-
+	.compiler-p-margin{margin: 0; text-align: center; margin-top: 5px !important;}
+		.compiler3-text-align{text-align: center; padding: 0; width: 80%; margin: 0 auto; display: block;}
+	.compiler7-border-box{	padding: 0; height: 30px; line-height: 30px;}
+	.compiler4-price{padding: 0; height: 30px; line-height: 30px; text-align: center; display: block;}
+	.compiler5-number{padding: 0; margin-top:5px !important;}
+	.compiler6-padding-div{padding: 0;}
+	.compiler8-number-input{height: 30px !important; line-height: 30px !important; display: inline-block; width: 100%; text-align: center;}
+	.compiler9-div-padding{padding: 0; margin-top: 5px !important;}
+	.compiler10-padding-number{padding: 0; height: 30px; line-height: 30px;}
+	.compiler11-position-seles{position: relative;}
+	.compiler12-position-option{position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto !important;;
+	   	border-radius: 50%; width: 30px; height: 30px;}
+	.compiler13-price-option{display: inline-block; width: 60px; border: 1px solid #ddd; border-radius: 5px; }
+    .compiler14-check-option{position: absolute; left: 35px; top: 5px; width: 10px; height: 10px;}
+    .compiler15-price-text{display: inline-block; height: 20px;}
+    .compiler16-position-price{position: relative;}
 
 .compiler-color-text{color: #fe1b1b; padding-right: 15px;}
 	.icons-color{color: #fad36a;}

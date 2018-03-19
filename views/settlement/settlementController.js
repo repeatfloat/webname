@@ -11,9 +11,9 @@ angular.module('app')
 				span:'运费',
 				span2:'￥8',
 				textright:'x1',
-				textcenter:'￥138.00',
+				textcenter:138.00,
 				footertext:'999人付款',
-				checked:'checked',
+				check:false,
 			},
 			{	
 				image:'./icons/shoppingCart-2.png',
@@ -21,9 +21,9 @@ angular.module('app')
 				span:'运费',
 				span2:'￥8',
 				textright:'x2',
-				textcenter:'￥169.00',
+				textcenter:169.00,
 				footertext:'666人付款',
-				checked:'checked',
+				check:false,
 			},
 			{	
 				image:'./icons/shoppingCart-3.png',
@@ -32,9 +32,9 @@ angular.module('app')
 				span2:'包邮',
 				cls:'settlement-text-border',
 				textright:'x1',
-				textcenter:'￥294.00',
+				textcenter:294.00,
 				footertext:'888人付款',
-				checked:true,
+				check:false,
 			},
 			{	
 				image:'./icons/shoppingCart-4.png',
@@ -43,8 +43,9 @@ angular.module('app')
 				span2:'包邮',
 				cls:'settlement-text-border',
 				textright:'x3',
-				textcenter:'￥158.00',
+				textcenter:158.00,
 				footertext:'555人付款',
+				check:false,
 			},
 			{	
 				image:'./icons/shoppingCart-5.png',
@@ -53,8 +54,52 @@ angular.module('app')
 				span2:'包邮',
 				cls:'settlement-text-border',
 				textright:'x1',
-				textcenter:'￥198.00',
+				textcenter:198.00,
+				check:false,
 				footertext:'333人付款',
 			},
-		]
+		];
+
+		$scope.allCheck = false;
+		$scope.sum=0;
+
+		$scope.changeCheckbox = function(bool){
+			$scope.shoppingSum();
+			for(var i=0;i<$scope.settlement.length;i++){
+				 if(!$scope.settlement[i].check){
+				 	console.log(!$scope.settlement[i].check)
+					$scope.allCheck = false;
+					return;
+				}		
+			}
+			$scope.allCheck = true;
+		};
+
+		$scope.allSelect = function(bool){
+			if(bool){
+				for(var i=0;i<$scope.settlement.length;i++){
+					$scope.settlement[i].check = true;
+				}
+				$scope.shoppingSum();
+			}else{
+				for(var i=0;i<$scope.settlement.length;i++){
+					$scope.settlement[i].check = false;
+				}
+				$scope.sum=0.00;
+			}
+		};
+
+		$scope.shoppingSum=function(){
+			console.log($scope.sum)
+			$scope.sum=0;
+			for(var i=0;i<$scope.settlement.length;i++){
+				var t=0;
+				if($scope.settlement[i].check){
+					t=$scope.settlement[i].textcenter
+					$scope.sum+=t
+					console.log("==>",$scope.sum)
+				}	
+			}
+		}
+ 
 			}])		

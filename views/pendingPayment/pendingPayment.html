@@ -44,34 +44,38 @@
 		</div>
 	</div>
 
-	<div ng-repeat="x in productimage track by $index" class="pendingPayment3-div-bg-color">
+
+
+
+	<div ng-repeat="item in code.pending track by $index" class="pendingPayment3-div-bg-color">
 	  <div class="row pendingPayment4-div-border">
 		<div class="col col-33">
-			<p class="pendingPayment3-p-image-size"><img ng-src="{{x.image}}"></p>
+			<p class="pendingPayment3-p-image-size"><img ng-src="{{item.imgurl}}"></p>
 		</div>
 
 		<div class="col">
-			<p ng-bind="x.text"></p>
-			<p class="pendingPayment-span-text-color" ng-bind="x.span"></p>
-			<p>{{x.textspan}} <span class="pendingPayment2-span-text-color">{{x.textcolor}}</span></p>
+			<p>{{item.sname}}清爽补水保湿细致毛孔精华,舒缓修护淡化痘印</p>
+			<p class="pendingPayment9-text-align" ng-click="payment(item)"><span class="pendingPayment-span-text-color">去付款</span></p>
+			<p><span>共1件商品 合计：</span><span class="pendingPayment2-span-text-color">￥{{item.price}}</span></p>
 		</div>
 	  </div>
 
 	  <div class="row">
 	  	<div class="col pendingPayment6-div-align">
 	  		<p class="pendingPayment4-p-icons-color">
-	  			<i class="icon ion-ios-trash"></i>{{x.textfooter}}
+	  			<i class="icon ion-ios-trash"></i>删除订单
 	  		</p>
 	  	</div>
 	  	<div class="col pendingPayment6-div-align">
-	  		<p class="pendingPayment4-p-border">{{x.textborder}}</p>
+	  		<p class="pendingPayment4-p-border">查看物流</p>
 	  	</div>
 	  	<div class="col pendingPayment6-div-align">
-	  		<p class="pendingPayment4-p-border">{{x.textborder2}}</p>
+	  		<p class="pendingPayment4-p-border">提醒发货</p>
 	  	</div>
 	  </div>
 	</div>
 
+	
 	<div class="row pendingPayment7-div-padding">
 		<div class="col pendingPayment7-div-position"><i class="pendingPayment-footer-hr-position"></i></div>
 		<div class="col">

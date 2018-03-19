@@ -21,24 +21,22 @@
 	<ion-slide-box  does-continue="{{slide.doesContinue}}"
 		auto-play="slide.autoPlay" 
 		slide-interval="{{slide.intervalTime}}"
-		show-pager="{{slide.showPager}}"
-		ng-click="index('productDetailsPage')">
+		show-pager="{{slide.showPager}}">
 
 		<ion-slide>
 			<div class="banner-image">
-				<img ng-src="{{data.data[0].imgurl}}" />
+				<img ng-src="{{data.data.banner[0].imgurl}}" />
 			</div>
 		</ion-slide>
-
 		<ion-slide>
 			<div class="banner-image">
-				<img ng-src="{{data.data[1].imgurl}}" />
+				<img ng-src="{{data.data.banner[1].imgurl}}" />
 			</div>
 		</ion-slide>
 
 	<ion-slide>
 		<div class="banner-image index-banner-nth3">
-			<img ng-src="{{data.data[2].imgurl}}" />
+			<img ng-src="{{data.data.banner[2].imgurl}}" />
 			<div class="banner-nth3-text">
 				<p class="banner-nth1-p">PARFUM BERGER</p>
 				<p class="banner-nth2-p">您好！首次见面</p>
@@ -55,8 +53,8 @@
 		<div class="col-demo" ng-click="index('productList')">
 			<ion-list>
 				<ion-item class="item-thumbnail-top index-list-image">
-					<img src="./icons/index-4.png">
-					<span>全部产品</span>
+					<img ng-src="{{data.data.clsify[4].largelmg}}"/>
+					<span>{{data.data.clsify[4].text}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
@@ -66,8 +64,8 @@
 		<div class="col-demo">
 			<ion-list>
 				<ion-item class="item-thumbnail-top index-list-image">
-					<img src="./icons/index-5.png">
-					<span>会员中心</span>
+					<img ng-src="{{data.data.clsify[5].largelmg}}"/>
+					<span>{{data.data.clsify[5].text}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
@@ -77,8 +75,8 @@
 		<div class="col-demo">
 			<ion-list>
 				<ion-item class="item-thumbnail-top index-list-image">
-					<img src="./icons/index-6.png">
-					<span>每日签到</span>
+					<img ng-src="{{data.data.clsify[6].largelmg}}">
+					<span>{{data.data.clsify[6].text}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
@@ -88,8 +86,8 @@
 		<div class="col-demo">
 			<ion-list>
 				<ion-item class="item-thumbnail-top index-list-image">
-					<img src="./icons/index-7.png">
-					<span>品牌故事</span>
+					<img ng-src="{{data.data.clsify[7].largelmg}}">
+					<span>{{data.data.clsify[7].text}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
@@ -103,7 +101,7 @@
 	<div class="aside-content-top">
 		<h3>汇美舍尊享礼遇</h3>
 		<div><p><span class="aside-top-lift-hr"></span>
-			<font>个ID限一份，不叠加，以实际收到的礼包为准</font>
+			<font>一个ID限一份，不叠加，以实际收到的礼包为准</font>
 			<span class="aside-top-right-hr"></span></p>
 		</div>
 	</div>
@@ -114,22 +112,22 @@
 		<div><p class="div-left-border">￥<span>50</span>满598使用</p></div>
 	</div>
 	<div class="aside-div-right">
-		<img src="./icons/index-8.png">
-		<p>实付￥199送</p>
-		<p>菁华乳/17g+</p>
-		<p>水润面膜3片+水润眼膜1盒</p>
+		<img ng-src="{{data.data.clsify[8].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[4].pid)"/>
+		<p>实付￥{{data.data.clsify[8].price}}送</p>
+		<p>{{data.data.clsify[8].text}}</p>
+		<p>{{data.data.clsify[8].pname}}</p>
 	</div>
 </div>
 <div class="overflow overflow-border-top">
 	<div class="aside-div-left">
-		<img src="./icons/index-9.png">
-		<p>实付￥298送</p>
-		<p>保加利亚玫瑰体验礼盒</p>
+		<img ng-src="{{data.data.clsify[9].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[5].pid)"/>
+		<p>实付￥{{data.data.clsify[9].price}}送</p>
+		<p>{{data.data.clsify[9].pname}}</p>
 	</div>
 	<div class="aside-div-right">
-		<img src="./icons/index-10.png">
-		<p>实付￥598送</p>
-		<p>玫瑰乳木果莹润沐浴露490g</p>
+		<img ng-src="{{data.data.clsify[10].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[6].pid)"/>
+		<p>实付￥{{data.data.clsify[10].price}}送</p>
+		<p>{{data.data.clsify[10].pname}}</p>
 	</div>
 </div>
 </div>
@@ -143,43 +141,43 @@
 </div>
 	<div class="aside-position">
 		<p class="aside-text-bgcolor">CFA国际芳疗师亲研</p>
-		<img src="./icons/index-11.png">
-		<p class="aside-font-size">水润清颜面膜贴/10片</p>
-		<p>花萃补水  温和滋润</p>
+		<img ng-src="{{data.data.clsify[11].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[7].pid)"/>
+		<p class="aside-font-size">{{data.data.clsify[11].pname}}</p>
+		<p>{{data.data.clsify[11].text}}</p>
 		<p><span>￥69</span><font>立即购买></font></p>
 	</div>
 </div>
 
 <div class="overflow overflow-border-top">
 	<div class="aside-div-left aside-text-color">
-		<img src="./icons/index-12.png">
+		<img ng-src="{{data.data.clsify[0].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[0].pid)"/>
 		<div class="text-border">
-			<p class="aside-font-size">普罗旺斯醒目薰衣草精油/10ml</p>
-			<p class="aside-font-b"><b>平衡舒缓  淡化痘印</b></p>
-			<p class="p"><span class="aside-size-text">￥138</span><font class="aisde-border">立即购买></font></p>
+			<p class="aside-font-size">{{data.data.clsify[0].pname}}</p>
+			<p class="aside-font-b"><b>{{data.data.clsify[0].text}}</b></p>
+			<p class="p"><span class="aside-size-text">￥{{data.data.clsify[0].price}}</span><font class="aisde-border">立即购买></font></p>
 		</div>
 	</div>
 	<div class="aside-div-right aside-text-color">
-		<img src="./icons/index-13.png">
-		<p class="aside-font-size">保加利亚大马士革玫瑰精油/10ml</p>
-		<p class="aside-font-b"><b>弹润白皙  水润雪肌</b></p>
-		<p><span>￥298</span><font class="aisde-border">立即购买></font></p>
+		<img ng-src="{{data.data.clsify[1].largelmg}}"  ng-click="detail('productDetailsPage',data.data.clsify[1].pid)"/>
+		<p class="aside-font-size">{{data.data.clsify[1].pname}}</p>
+		<p class="aside-font-b"><b>{{data.data.clsify[1].text}}</b></p>
+		<p><span>￥{{data.data.clsify[1].price}}</span><font class="aisde-border">立即购买></font></p>
 	</div>
 </div>
 <div class="overflow overflow-border-top">
 	<div class="aside-div-left aside-text-color">
-		<img src="./icons/index-14.png">
+		<img  ng-src="{{data.data.clsify[2].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[2].pid)"/>
 		<div class="text-border">
-			<p class="aside-font-size">汇美舍玫瑰水润纯露/220ml</p>
-			<p class="aside-font-b"><b>保湿滋润  提亮肤色</b></p>
+			<p class="aside-font-size">{{data.data.clsify[2].pname}}</p>
+			<p class="aside-font-b"><b>{{data.data.clsify[2].text}}</b></p>
 			<p class="p"><span class="aside-size-text">￥59</span><font class="aisde-border">立即购买></font></p>
 		</div>
 	</div>
 	<div class="aside-div-right aside-text-color">
-		<img src="./icons/index-15.png">
-		<p class="aside-font-size">汇美舍玫瑰檀香丝柔润滑眼霜/25g</p>
-		<p class="aside-font-b"><b>滋润眼周  减淡眼纹</b></p>
-		<p class="aside-size-text"><span>￥169</span><font class="aisde-border">立即购买></font></p>
+		<img  ng-src="{{data.data.clsify[3].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[3].pid)"/>
+		<p class="aside-font-size">{{data.data.clsify[3].pname}}</p>
+		<p class="aside-font-b"><b>{{data.data.clsify[3].text}}</b></p>
+		<p class="aside-size-text"><span>￥{{data.data.clsify[3].price}}</span><font class="aisde-border">立即购买></font></p>
 	</div>
 </div>
 
@@ -188,10 +186,10 @@
 		<div class="col-demo aside-col-demo">
 			<ion-list>
 				<ion-item class="item-thumbnail-left index-list-image-left">
-					<img src="./icons/index-16.png">
-					<p>玫瑰檀香丝柔润滑套装/3件</p>
-					<p><b>弹润紧致  平滑淡纹</b></p>
-					<p><span class="text-color-aisde">￥325</span><font class="border-color-aside">立即购买></font></p>
+					<img ng-src="{{data.data.clsify[12].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[8].pid)"/>
+					<p>{{data.data.clsify[12].pname}}</p>
+					<p><b>{{data.data.clsify[12].text}}</b></p>
+					<p><span class="text-color-aisde">￥{{data.data.clsify[12].price}}</span><font class="border-color-aside">立即购买></font></p>
 					<ul class="aisde-ul-top">
 						<li>熟龄肌必备</li>
 						<li>珍添玫瑰精华</li>
@@ -202,15 +200,16 @@
 		</div>
 	</div>
 </div>
+
 <div class="row">
 	<div class="col">
 		<div class="col-demo aside-col-demo">
 			<ion-list>
 				<ion-item class="item-thumbnail-right index-list-image-left">
-					<img src="./icons/index-16.png">
-					<p>玫瑰水润护肤礼盒/3件</p>
-					<p><b>深层补水  提亮肤色</b></p>
-					<p><span class="text-color-aisde">￥159</span><font class="border-color-aside">立即购买></font></p>
+					<img  ng-src="{{data.data.clsify[13].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[9].pid)"/>
+					<p>{{data.data.clsify[13].pname}}</p>
+					<p><b>{{data.data.clsify[13].text}}</b></p>
+					<p><span class="text-color-aisde">￥{{data.data.clsify[13].price}}</span><font class="border-color-aside">立即购买></font></p>
 					<ul class="aisde-ul-bottom">
 						<li>熟龄肌必备</li>
 						<li>珍添玫瑰精华</li>
@@ -222,7 +221,7 @@
 	</div>
 </div>
 </div>
-
+<!-- <div>{{data.data.clsify[0].pid}}</div> -->
 <div class="row index-footer">
 	<div class="col">
 		

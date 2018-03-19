@@ -18,7 +18,7 @@
 
 	  <div class="row">
 		<div class="col">
-			<p class="managementAddress3-p-text-align">{{x.text}} <span>{{x.phone}}</span></p>
+			<p class="managementAddress3-p-text-align">{{x.username}} <span>{{x.phone}}</span></p>
 			<p class="managementAddress3-p-text-align" ng-bind="x.addres"></p>
 		</div>
 
@@ -39,20 +39,28 @@
 	  		<img src="./icons/managementAddress-1.png"/>
 	  	</div>
 
-	  	<div class="col">
+	  	<div class="col"  ng-click="deletes($index)">
 	  		<p class="managementAddress4-p-text-indent">
 	  			<i class="icon ion-ios-trash-outline"></i>
 	  			{{x.delete}}
 	  		</p>
 	  	</div>
 	  </div>
-
 </div>
+	<div class="row managementAddress7-div-position">
+		<div class="col managementAddress7-div-div-position">
+			<p class="managementAddress7-div-button-position" ng-disabled="abl" ng-click="add()">
+			确定添加
+			</p>
+		</div>
+	</div>
 
 	<div class="row managementAddress6-div-footer-position" >
 		<div class="col" ng-click="addOclick('newlyIncreasedAddress')">
 			<p>新增收货地址</p>
 		</div>
 	</div>
+
+	
 </ion-content>
 </div>

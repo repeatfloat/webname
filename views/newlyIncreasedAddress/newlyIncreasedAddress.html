@@ -21,7 +21,7 @@
 		<div class="col col-40">
 			<p>
 				<input type="text" placeholder="请输入收货人姓名"
-				ng-model="userInfo.username"/>
+				ng-model="userInfos.username"/>
 			</p>
 		</div>
 
@@ -40,7 +40,7 @@
 		<div class="col col-40">
 			<p>
 				<input type="text" placeholder="请输入电话号码"
-				ng-model="userInfo.phone"/>
+				ng-model="userInfos.phone"/>
 			</p>
 		</div>
 
@@ -63,7 +63,7 @@
 			<label class="item item-input">
 				<select class="select">
 				    <option selected>请选择省份</option>
-				    <option ng-repeat="item in province track by $index">{{item.text}}</option>
+				    <option ng-repeat="item in province track by $index"  ng-model="userInfo.phone2">{{item.text}}</option>
 				</select>
 			</label>
 		</div>

@@ -57,4 +57,7 @@ angular.module('app')
 		$scope.managementAddress=function(){
 			$state.go('managementAddress')
 		}
+		$scope.medel=function(url){
+			$state.go(url)
+		}
 }])		

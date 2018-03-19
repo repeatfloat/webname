@@ -42,7 +42,7 @@
 		</div>
 	</div>
 
-	<div ng-repeat="x in productimage track by $index" class="allMyOrders3-div-bg-color">
+<!-- 	<div ng-repeat="x in productimage track by $index" class="allMyOrders3-div-bg-color">
 	  <div class="row allMyOrders4-div-border">
 		<div class="col col-33">
 			<p class="allMyOrders3-p-image-size"><img ng-src="{{x.image}}"/></p>
@@ -50,7 +50,9 @@
 
 		<div class="col">
 			<p ng-bind="x.text"></p>
-			<p class="allMyOrders-span-text-color" ng-bind="x.span"></p>
+			<p class="allMyOrders-span-text-color">
+				<span class="allMyOrders8-span-text">{{x.span}}</span>
+			</p>
 			<p>{{x.textspan}} <span class="allMyOrders2-span-text-color">{{x.textcolor}}</span></p>
 		</div>
 	  </div>
@@ -62,13 +64,98 @@
 	  		</p>
 	  	</div>
 	  	<div class="col allMyOrders6-div-align">
-	  		<p class="allMyOrders-span-text-color span">{{x.textborder}}</p>
+			<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">联系卖家</span>	
+	  		</p>
 	  	</div>
 	  	<div class="col allMyOrders6-div-align">
-	  		<p class="allMyOrders-span-text-color span">{{x.textborder2}}</p>
+	  		<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">去付款</span>	
+	  		</p>
+	  	</div>
+	  </div>
+	</div> -->
+
+	<div ng-repeat="data in code.pending track by $index" class="allMyOrders3-div-bg-color">
+	  <div class="row allMyOrders4-div-border">
+		<div class="col col-33">
+			<p class="allMyOrders3-p-image-size"><img ng-src="{{data.imgurl}}"/></p>
+		</div>
+
+		<div class="col">
+			<p>{{data.sname}}清爽补水保湿细致毛孔精华,舒缓修护淡化痘印</p>
+			<p class="allMyOrders-span-text-color">
+				<span class="allMyOrders8-span-text">待付款</span>
+			</p>
+			<p>  	
+				共1件商品 合计: 
+				<span style="margin-left: 5px" class="allMyOrders2-span-text-color"> ￥ 
+					{{data.price}}
+				</span>
+			</p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>删除订单
+	  		</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">联系卖家</span>	
+	  		</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">去付款</span>	
+	  		</p>
 	  	</div>
 	  </div>
 	</div>
+
+
+	<div ng-repeat="pending in pending.pending track by $index" class="allMyOrders3-div-bg-color">
+	  <div class="row allMyOrders4-div-border">
+		<div class="col col-33">
+			<p class="allMyOrders3-p-image-size"><img ng-src="{{pending.imgurl}}"/></p>
+		</div>
+
+		<div class="col">
+			<p>{{pending.name}}清爽补水保湿细致毛孔精华,舒缓修护淡化痘印</p>
+			<p class="allMyOrders-span-text-color">
+				<span class="allMyOrders8-span-text">已付款</span>
+			</p>
+			<p>  	
+				共1件商品 合计: 
+				<span style="margin-left: 5px" class="allMyOrders2-span-text-color"> ￥ 
+					{{pending.price}}
+				</span>
+			</p>
+		</div>
+	  </div>
+
+	  <div class="row">
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders4-p-icons-color">
+	  			<i class="icon ion-ios-trash"></i>删除订单
+	  		</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">查看物流</span>	
+	  		</p>
+	  	</div>
+	  	<div class="col allMyOrders6-div-align">
+	  		<p class="allMyOrders10-p">
+	  		   <span class="allMyOrders9-span">提醒发货</span>	
+	  		</p>
+	  	</div>
+	  </div>
+	</div>
+
+
 
 	<div class="row allMyOrders7-div-footer">
 		<div class="col allMyOrders8-div-footer-position"><b></b></div>

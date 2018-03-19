@@ -8,6 +8,5 @@ angular.module('app')
 			isLogin: false,
 			//用户名称,匿名.
 			nickname: ''
-		};
-		
+		};	
 	}])

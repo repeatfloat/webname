@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('productEvaluationController', ['$scope','$state', function ($scope,$state) {
+	.controller('productEvaluationController', ['$scope','$state','API',function ($scope,$state,API ) {
 			$scope.banner={
 			doesContinue:true,
 			autoPlay:true,
@@ -17,4 +17,18 @@ angular.module('app')
 		$scope.listclick=function(url){
 			$state.go(url)
 				}
+			API.fetchGet('http://127.0.0.1:9000/index')
+			.then(function (data) {
+				
+				$scope.data = data;
+				console.log(data)
+			})
+			.catch(function (err) {
+				// tip.loadTips.hideLoading();
+				console.log(err);
+			})
+	$scope.listclick2=function(url,id){
+
+		$state.go(url,{id:id});	
+	}
 			}])		

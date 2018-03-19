@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('newlyIncreasedAddressController', ['$scope','$state','validForm', 'tip',function ($scope,$state,validForm,tip) {
+	.controller('newlyIncreasedAddressController', ['$rootScope','$scope','$state','validForm', 'tip',function ($rootScope,$scope,$state,validForm,tip) {
 				$scope.province=[
 				{text:'北京'},
 				{text:'天津'},
@@ -13,7 +13,7 @@ angular.module('app')
 				{text:'广东省'},
 				{text:'海南省'},
 				{text:'四川省'},
-				]
+				];
 
 					$scope.city=[
 				{text:'广州市'},
@@ -28,7 +28,7 @@ angular.module('app')
 				{text:'肇庆市'},
 				{text:'惠州市'},
 				{text:'梅州市'},
-				]
+				];
 
 				$scope.region=[
 				{text:'荔湾区'},
@@ -43,34 +43,46 @@ angular.module('app')
 				{text:'萝岗区'},
 				{text:'增城区'},
 				{text:'从化区'}
-				]
+				];
 
-				$scope.userInfo={
+				$rootScope.userInfos={
 					phone:'',
 					username:'',
+					addres:$scope.province[0].text,
+					editAddress:'编辑',
+					selectAddress:'默认地址',
+					delete:'删除'
 				};
 
 				$scope.setaddress = function () {
-					if (!isValid()) {
-						return}else{
-					$state.go('managementAddress')
-						}
-				}
-
+					if (!isValid())
+						{
+							return
+						}else{
+						$state.go('managementAddress');
+						};
+				};
+				
+				// $scope.a=function(index){
+				// 	console.log(index);
+				// 	// for(var i=0; i<$scope.province.length; i++){
+				// 	// 	console.log(index.province[i].text);
+				// 	// };
+				// };
 				function isValid() {
-				if (!validForm.isNotEmpty($scope.userInfo.phone)) {
+				if (!validForm.isNotEmpty($scope.userInfos.phone)) {
 					tip.showTip('手机号码不能为空');
 					return false;
-				} else if (!validForm.validLength($scope.userInfo.phone, 11, 11)) {
+				} else if (!validForm.validLength($scope.userInfos.phone, 11, 11)) {
 					tip.showTip('手机号码长度不正确');
 					return false;
-				} else if (!validForm.validPhone($scope.userInfo.phone)) {
+				} else if (!validForm.validPhone($scope.userInfos.phone)) {
 					tip.showTip('手机号码格式不正确');
 					return false;
-				}else if (!validForm.isNotEmpty($scope.userInfo.username)) {
+				}else if (!validForm.isNotEmpty($scope.userInfos.username)) {
 					tip.showTip('姓名不能为空');
 					return false;
-				}else if (validForm.username($scope.userInfo.username)) {
+				}else if (validForm.username($scope.userInfos.username)) {
 					tip.showTip('姓名格式不正确');
 					return false;
 				}
@@ -81,4 +93,6 @@ angular.module('app')
 				$scope.newAddressonclick=function(url){
 					$state.go(url)
 				}
+
+
 			}])

@@ -13,18 +13,23 @@ angular.module('app')
 			.then(function (data) {
 				
 				$scope.data = data;
+				console.log(data)
 			})
 			.catch(function (err) {
 				// tip.loadTips.hideLoading();
 				console.log(err);
 			})
+
+
 		$scope.slide={
 			doesContinue:true,
 			autoPlay:true,
 			intervalTime: 1500,
 			showPager:true,
 		};
+	$scope.detail = function (stateName, id) {
 
-
+			$state.go(stateName, {id: id});
+		}
 
 	}])

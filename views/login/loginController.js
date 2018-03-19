@@ -30,7 +30,7 @@ angular.module('app')
 				$state.go('publicfooter.index');
 			}
 
-			})
+			 })
 			.catch(function (err) {
 				//关闭加载动画
 				tip.loadTips.hideLoading();
