@@ -29,6 +29,18 @@
 			<p class="myTracks2-p-text-align">编辑</p>
 		</div>
 	</div>
+	
+	<div class="myTracks3-div-image-size">
+			<p class="myTracks3-p-text-indent">2018-01至今</p>
+
+		<div class="row myTracks4-div-text-align" >
+			<div class="col col-33" ng-repeat="item in code.pending track by $index">
+				<p><img ng-src="{{item.imgurl}}"/></p>
+				<p>{{item.price}}<span class="myTracks-icons-color"><i class="icon ion-ios-star-outline"></i></span></p>
+			</div>
+		</div>
+	</div>
+
 
 <div class="myTracks3-div-image-size" ng-repeat="x in dateProduct track by $index">
 		<p class="myTracks3-p-text-indent" ng-bind="x.date"></p>
@@ -50,5 +62,6 @@
 		</div>
 	</div>
 </div>
+
 </ion-content>
 </div>

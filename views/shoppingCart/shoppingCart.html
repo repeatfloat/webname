@@ -22,22 +22,23 @@
 
 	<div class="row shoppingCart-p-margin" ng-repeat="item in shopping track by $index">
 		<div class="col col-20 shoppingCart-images">
-			<img ng-src="{{item.image}}" ng-click="shopping2('productDetailsPage',item.datas)"/>
+			<img ng-src="{{item.imgsurl}}" ng-click="shopping2('productDetailsPage',item.datas)"/>
 		</div>
 		<div class="col">
 			<div class="row shoppingCart-border-bottom-top">
 				<div class="col">
 					<p>
-						{{item.text}}
+						{{item.name}}
 					</p>
 					<p>
 						{{item.span}} <span class="{{item.cls}} shoppingCart-margin-left">{{item.span2}}</span>
-						<i class="icon ion-android-star-outline icons-color text-padding-left"></i>
+						<i class="icon ion-android-star-outline icons-color text-padding-left" 
+						ng-click="collections($index)"></i>
 					</p>
-					<p class="shoppingCart-text-align">{{item.textright}}</p>
+					<p class="shoppingCart-text-align">x{{item.textright}}</p>
 					<p>
 						<span class="shoppingCart-color-text">{{item.textcolor}}</span>
-						<font class="shoppingCart-color-text">￥{{item.textcenter}}</font>{{item.footertext}}
+						<font class="shoppingCart-color-text">￥{{item.price}}</font>{{item.footertext}}
 					</p>
 				</div>
 				<div class="col col-20 icons-position">
@@ -65,7 +66,7 @@
 		<div class="col">
 			<p><img ng-src="{{dete.data.shopp[0].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[10].pid)"/></p>
 			<p>{{dete.data.shopp[0].sname}}</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2(dete.data.shopp[0])">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -82,7 +83,7 @@
 			<p>
 				{{dete.data.shopp[1].sname}} 
 			</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2(dete.data.shopp[1])">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -99,7 +100,7 @@
 		<div class="col">
 			<p><img ng-src="{{dete.data.shopp[2].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[12].pid)"/></p>
 			<p>{{dete.data.shopp[2].sname}}</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2(dete.data.shopp[2])">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -116,7 +117,7 @@
 			<p>
 				{{dete.data.shopp[3].sname}}
 			</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2(dete.data.shopp[3])">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -133,7 +134,7 @@
 		<div class="col">
 			<p><img ng-src="{{dete.data.shopp[4].imgsurl}}" ng-click="shopping2('productDetailsPage',data.data.clsify[14].pid)"/></p>
 			<p> {{dete.data.shopp[4].sname}}</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2(dete.data.shopp[4])">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -150,7 +151,7 @@
 			<p>
 				{{dete.data.shopp[5].sname}}
 			</p>
-			<p class="icons-align">
+			<p class="icons-align" ng-click="collection2('dete.data.shopp[5]')">
 				<i class="icon ion-android-star-outline"></i>
 			</p>
 			<p>
@@ -165,12 +166,12 @@
 
 	<div class="row">
 		<div class="col">
-			<p class="footer-input">
-				<!-- <label>全选</label><input type="checkbox" ng-model="isSelect" ng-change="changeModel(isSelect)"/> -->
+			<p class="shoppingcart2-text-align">
+				所选商品合计:
 			</p>
 		</div>
 		<div class="col">
-			<p>合计： <input type="" name="" style="display: inline-block; width: 40px;"
+			<p><input class="shoppingcart3-footer-input" type="text" disabled="true" name=""
 			 ng-model="sum">
 			</p>
 		</div>

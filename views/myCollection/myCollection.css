@@ -4,7 +4,7 @@
 .myCollection-p-top-text-align{text-align: center; color: #5b0061;}
 
 .myCollection2-div-position{position: relative;}
-	.myCollection2-div-position input{border: 1px solid #ededed; background-color: #ededed;
+	.myCollection2-div-position input{border: 1px solid #777; background-color: #ededed;
 	border-radius: 20px; height: 40px; line-height: 40px; text-indent: 40px; margin-right: 10px;
 	display: inline-block; width: 80%;}
 	.myCollection2-div-position img{position: absolute; width: 20px; height:20px; top:15px;
@@ -18,7 +18,9 @@
 	.myCollection2-p-text-align{text-align: center; margin: 0; line-height: 40px;}
 	.myCollection5-div-icons-color p{margin: 0; line-height: 20px; text-align: center;}
 	.myCollection5-div-icons-color i{color: #f9c740;}
-	.myCollection6-div-p-text-align p{text-align: center; margin: 0;}
+	.myCollection6-div-p-text-align p{text-align: center; margin: 0; color: #777;}
 	.productTextcolor{color: #fe0000;}
 	.spanBorder-color{color: #ffb867;}
+	.myCollection4-pstion-span{margin-left: 5px;}
+	.mycollection8-bg-div{background-color: #eee;}
 .footer-icons-color{color: #ffa9ff; display: inline-block; text-align: right;}

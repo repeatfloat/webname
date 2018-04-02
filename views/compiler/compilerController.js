@@ -7,7 +7,7 @@ angular.module('app')
 			// console.log($scope.data)
 
 		$scope.subtrack=function(index){
-		if($scope.data.compiler[index].numprice<1){
+		if($scope.data.compiler[index].numprice<2){
 			return;
 		}else{
 			$scope.data.compiler[index].numprice--;
@@ -61,13 +61,12 @@ angular.module('app')
 
 
 		$scope.compiles=function(){
-			let seletarr=[];
 		for(var i=0;i<$scope.data.compiler.length;i++){
 			if($scope.data.compiler[i].check == true){
-				seletarr.push($scope.data.compiler[i])
-			API.fetchGet('http://127.0.0.1:9000/pendingDelivery',seletarr[i])
-			.then(function () {// $scope.data = data.data;
+			API.fetchGet('http://127.0.0.1:9000/pendingDelivery',$scope.data.compiler[i])
+			.then(function () {
 				})
+		console.log($scope.data.compiler[i])
 		tip.showTip('亲付款成功 等待发货哦');
 		$state.go('pendingDelivery');
 			} }	

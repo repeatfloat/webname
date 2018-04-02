@@ -1,17 +1,29 @@
 <ion-content class="starclass2-left">
  <div class="row starclass2-content" ng-repeat="item in imagearr track by $index">
 	<div class="col">
-		<p><img ng-src="{{item.img}}"/></p>
-		<p>{{item.text}}</p>
+		<ion-list>
+			<ion-item class="item-thumbnail-top starclass2-content-image">
+				<img class="starclass4-img" ng-src="{{item.img}}">
+				<span class="scheme3-span">{{item.text}}</span>
+			</ion-item>
+		</ion-list>
 	</div>
 
 	<div class="col">
-		<p><img ng-src="{{item.img1}}"/></p>
-		<p>{{item.text1}}</p>
+		<ion-item class="item-thumbnail-top  starclass2-content-image">
+			<img class="starclass4-img" ng-src="{{item.img1}}">
+			<span class="scheme3-span">{{item.text1}}</span>
+		</ion-item>
+	</div>
+
+	<div class="col">
+		<ion-item class="item-thumbnail-top  starclass2-content-image">
+			<img class="starclass4-img" ng-src="{{item.img2}}">
+			<span class="scheme3-span">{{item.text2}}</span>
+		</ion-item>
 	</div>
   </div>
 
-  <div class="row">
-  	<div class="col"></div>
-  </div>
+  <div class="starclass5-margin-footer"></div>
+ 
 </ion-content>

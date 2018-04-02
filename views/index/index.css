@@ -59,20 +59,20 @@ width: 20px;}
 	.index-aside-content .aside-bgcolor{width: 94%; margin: 0 auto;}
 	.aside-position p{text-align: center; line-height: 25px; margin: 0;}
 	.aside-font-size{font-size: 12px;}
-	.aside-position p span{color: #ff0000; padding: 0 10px;}
-	.aside-position p font{display: inline-block; border:1px solid #ff00ff; color: #ff00ff; padding:0 10px; border-radius: 10px;}
+	.aside-position p span{color: #777; padding: 0 10px;}
+	.aside-position p font{display: inline-block; border:1px solid #ddd; color: #777; padding:0 10px; border-radius: 10px;}
 	.aside-position img{width: 80%; display: block; margin: 10px auto 0;}
 	.aside-text-color p{color: #000; line-height: 25px;}
-	.aside-text-color p span{color: #ff0000; padding: 0 10px;}
+	.aside-text-color p span{color: #777; padding: 0 10px;}
 	.aside-font-b b{font-size: 13px;}
-	.p .aside-size-text{font-size: 14px;color: #ff0000; padding: 0 10px;}
-	.aisde-border{display: inline-block; border:1px solid #ff00ff; color: #ff00ff; padding:0 10px;  border-radius: 10px;}
+	.p .aside-size-text{font-size: 14px;color: #777; padding: 0 10px;}
+	.aisde-border{display: inline-block; border:1px solid #ddd; color: #777; padding:0 10px;  border-radius: 10px;}
 	.text-border{border-right: 1px solid #ddd;}
 	.index-list-image-left{position: relative;}
 	.index-list-image-left img{display: block; width: 80%; margin: 0 auto;}
 	.aside-col-demo{text-align: center;}
-	.text-color-aisde{color: #ff0000; padding: 0 10px;}
-	.border-color-aside{display: inline-block; border:1px solid #ff00ff; color: #ff00ff; padding:0 10px; border-radius: 10px;}
+	.text-color-aisde{color: #777; padding: 0 10px;}
+	.border-color-aside{display: inline-block; border:1px solid #ddd; color: #777; padding:0 10px; border-radius: 10px;}
 	.aisde-ul-top{position: absolute; top:5px; left:90px;}
 	.aisde-ul-top li,.aisde-ul-bottom li{list-style: none; width: 30px; height:30px; border:1px solid #f0909b; color: #f0909b;
 		line-height:30px; overflow: hidden; text-align: center; border-radius: 50%; font-size: 12px;}
@@ -85,3 +85,5 @@ width: 20px;}
 
 
  .index-footer{height: 50px;}
+ .index4-text-color{color: #777;}
+ 

@@ -22,7 +22,7 @@ angular.module('app')
 					textcolor:'￥ 158.00',
 					textfooter:'删除订单',
 					textborder:'查看物流',
-					textborder2:'去评价'
+					textborder2:'确认收货'
 				},
 				]
 			}])

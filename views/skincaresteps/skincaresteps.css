@@ -1,6 +1,6 @@
-.skincaresteps-margin-left{margin-left: 30%;}
-.skincaresteps-content-image{padding: 5px 0;}
-.skincaresteps-content-image span{display: inline-block; width: 100%; text-align: center; font-size:12px;}
-.skincaresteps-content-image img{width:50px; height: 50px; display: block; margin: 0 auto;}
+.skincaresteps-margin-left{margin-left: 20%;}
+.skincaresteps-content-image{padding: 0; background-color: #ddd;}
+.skincaresteps-content-image span{color: #777; display: inline-block; width: 100%; text-align: center; font-size:12px;}
+.skincaresteps-content-image img{width:100%; height: 60px; display: block; margin: 0 auto;}
 
 

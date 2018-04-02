@@ -12,7 +12,7 @@ angular.module('app')
 					textcolor:'￥ 158.00',
 					textfooter:'删除订单',
 					textborder:'查看物流',
-					textborder2:'去评价'
+					textborder2:'追加评价'
 				},
 				{	
 					image:'./icons/allMyOrders-5.png',

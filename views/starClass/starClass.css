@@ -1,4 +1,5 @@
-.starclass2-left{margin-left:30%; margin-top: 100px;
-overflow: hidden;}
-.starclass2-content p{margin:0; text-align: center;font-size: 12px;}
-.starclass2-content img{width: 60%; margin: 0 auto; display: block;}
+.starclass2-left{margin-left: 20%; margin-top: 110px;}
+.starclass2-content-image{padding: 0; background-color: #ddd;}
+.starclass2-content .scheme3-span{color: #777; display: inline-block; width: 100%; text-align: center; font-size:12px;}
+.starclass2-content .starclass4-img{width:100%; height: 60px; display: block; margin: 0 auto;}
+.starclass5-margin-footer{margin: 40px 0 0; height: 1px;}

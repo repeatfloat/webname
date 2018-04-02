@@ -54,57 +54,36 @@
 		<div class="col col-33">
 			<h4>所在地址</h4>
 		</div>
+	</div>
 
-		<div class="col col-33">
-
-		</div>
+	<div class="row newlyIncreasedAddress-p-text-align">
 
 		<div class="col newlyIncreasedAddress3-p-text-color">
 			<label class="item item-input">
-				<select class="select">
-				    <option selected>请选择省份</option>
-				    <option ng-repeat="item in province track by $index"  ng-model="userInfo.phone2">{{item.text}}</option>
-				</select>
+				请输入省份:
+				<input type="text" name="" ng-model="userInfos.province">
+			</label>
+		</div>
+	</div>
+
+
+
+	<div class="row newlyIncreasedAddress-p-text-align">
+
+		<div class="col newlyIncreasedAddress3-p-text-color">
+			<label class="item item-input">
+				请输入城市:
+				<input type="text" name="" ng-model="userInfos.city">
 			</label>
 		</div>
 	</div>
 
 	<div class="row newlyIncreasedAddress-p-text-align">
-		<div class="col col-33">
-			
-		</div>
-
-		<div class="col col-33">
-			<p></p>
-		</div>
 
 		<div class="col newlyIncreasedAddress3-p-text-color">
 			<label class="item item-input">
-				<select class="select">
-				    <option selected>请选择城市</option>
-				    <option ng-repeat="item in city track by $index">
-				    	{{item.text}}
-					</option>
-				</select>
-			</label>
-		</div>
-	</div>
-
-	<div class="row newlyIncreasedAddress-p-text-align">
-		<div class="col col-33">
-			<h4></h4>
-		</div>
-
-		<div class="col col-33">
-			<p></p>
-		</div>
-
-		<div class="col newlyIncreasedAddress3-p-text-color">
-			<label class="item item-input">
-				<select class="select">
-				    <option selected>请选择区域</option>
-				    <option ng-repeat="item in region track by $index">{{item.text}}</option>
-				</select>
+				请输入市区:
+				<input type="text" name="" ng-model="userInfos.region">
 			</label>
 		</div>
 	</div>
@@ -115,9 +94,8 @@
 
 
 
-
 	<div class="newlyIncreasedAddress2-div-input">
-		<input type="text" name="" placeholder="详细地址">
+		<input type="text" name="" placeholder="详细地址:" ng-model="userInfos.setadd">
 	</div>
 
 	<div class="row">
@@ -126,7 +104,7 @@
 		</div>
 		<div class="col"></div>
 		<div class="col col-20 newlyIncreasedAddress3-div-position">
-			<p class="newlyIncreasedAddress4-p-border"><input type="checkbox" value="" /></p>
+			<p class="newlyIncreasedAddress4-p-border"><input type="checkbox" value=""/></p>
 		</div>
 	</div>
 

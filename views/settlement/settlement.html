@@ -20,25 +20,25 @@
 	</div>
 
 
-	<div class="row settlement-p-margin" ng-repeat="item in settlement track by $index">
+	<div class="row settlement-p-margin" ng-repeat="item in dete.settlement track by $index">
 		<div class="col col-20 settlement-images">
-			<img ng-src="{{item.image}}">
+			<img ng-src="{{item.imgurl}}" ng-click="detail('productDetailsPage',item.did)">
 		</div>
 
 		<div class="col">
 			<div class="row settlement-border-bottom-top">
 				<div class="col">
 					<p>
-						{{item.text}}
+						{{item.sname}}
 					</p>
 					<p>
-						{{item.span}} <span class="{{item.cls}} text-padding-right">{{item.span2}}</span>
+						在线下单 <span class="{{item.cls}} text-padding-right">包邮</span>
 						<i class="icon ion-android-star-outline icons-color text-padding-left"></i>
 					</p>
-					<p class="settlement-text-align">{{item.textright}}</p>
+					<p class="settlement-text-align">x{{item.numprice}}</p>
 					<p>
-						<span class="settlement-color-text">{{item.textcolor}}</span>
-						<font class="settlement-color-text">{{item.textcenter}}</font>{{item.footertext}}
+						<!-- <span class="settlement-color-text">{{item.textcolor}}</span> -->
+						<font class="settlement-color-text">{{item.price}}</font>666人付款
 					</p>
 				</div>
 				<div class="col col-20 icons-position">
@@ -174,7 +174,7 @@
 		<div class="col">
 			<p>合计<input class="settlement-input" type="" name="" ng-model="sum" ></p>
 		</div>
-		<div class="col">
+		<div class="col" ng-click="setpayment()">
 			<p class="footer-background-color">
 				结算
 			</p>

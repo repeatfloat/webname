@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('schemeController', ['$scope','$state', function ($scope,$state) {
+	.controller('schemeController', ['$scope','$state','API', function ($scope,$state,API) {
 
 		$scope.scheme=[
 			{
@@ -18,6 +18,19 @@ angular.module('app')
 				text2:'舒缓修复',
 				image2:'./icons/classification-5.png'
 			},
-		]
+		];
+
+		API.fetchGet('http://127.0.0.1:9000/scheme')
+			.then(function (data) {
+				$scope.data = data.data;
+				// console.log(data)
+			})
+			.catch(function (err) {
+				console.log(err);
+		})
+
+		$scope.scheme2=function(url,id){
+			$state.go(url,{id:id})
+		}
 
 		}])

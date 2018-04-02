@@ -9,19 +9,19 @@
 	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align p{text-align: center; margin: 0; overflow: hidden;
 		height: 40px; line-height: 40px;}
 	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align p input{margin-top: 5px; width: 100%;}
-	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align h4{margin: 0; line-height: 40px;}
-	.item-input{padding: 0; position: relative; top: 5px;}
+	.newlyIncreasedAddress5-div-list .newlyIncreasedAddress-p-text-align h4{color: #777; margin: 0; line-height: 40px;}
+	.item-input{padding: 0; position: relative; top: 5px;text-indent: 1em; color: #777;}
 	.select{line-height: 35px; height: 35px; position: relative !important; border: 1px solid #eee;
 		padding-right: 2px; margin: 0 auto;border-bottom: 0px solid #eee;}
 .newlyIncreasedAddress5-div-list .newlyIncreasedAddress3-p-text-color{color: #888888;}
 
-	.newlyIncreasedAddress2-div-input input{display: block;width: 100%; height: 80px;
-		border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6;
+	.newlyIncreasedAddress2-div-input input{display: block;width: 100%;  height: 80px;
+		border-bottom: 1px solid #e6e6e6; border-top: 1px solid #e6e6e6; text-indent: 1em;
 		margin-top: 10px;}
 	.newlyIncreasedAddress3-div-position{position: relative;}
 	.newlyIncreasedAddress4-p-border{width: 20px; height: 20px; 
 		position: absolute; top: 0; left: 0; right: 0; bottom: 0;margin: auto;}
-	.newlyIncreasedAddress4-div-text p{line-height: 40px; margin: 0;}
+	.newlyIncreasedAddress4-div-text p{line-height: 40px; margin: 0; color: #777;}
 	.newlyIncreasedAddress5-div-button-color{background-color: #ff00ff; color: #fff;
 	margin: 0 auto; width: 80%;}
 	.button-full{margin: 0 auto!important; height: 40px; min-height: 40px;}

@@ -5,7 +5,7 @@
 
 		<div class="col col-20">
 			<p class="index-p-first-image"><img src="./icons/index-1.png"></p>
-			<p>扫一扫</p>
+			<p class="index4-text-color">扫一扫</p>
 		</div>
 
 		<div class="col index-div-position">
@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="col col-20">
-			<p class="index-right-text-size">搜索<img class="right-image-margin" src="./icons/index-3.png"></p>
+			<p class="index-right-text-size index4-text-color">搜索<img class="right-image-margin" src="./icons/index-3.png"></p>
 		</div>
 
 	</div>
@@ -144,7 +144,7 @@
 		<img ng-src="{{data.data.clsify[11].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[7].pid)"/>
 		<p class="aside-font-size">{{data.data.clsify[11].pname}}</p>
 		<p>{{data.data.clsify[11].text}}</p>
-		<p><span>￥69</span><font>立即购买></font></p>
+		<p><span class="index4-text-color">￥69</span><font class="index4-text-color">立即购买></font></p>
 	</div>
 </div>
 
@@ -154,14 +154,21 @@
 		<div class="text-border">
 			<p class="aside-font-size">{{data.data.clsify[0].pname}}</p>
 			<p class="aside-font-b"><b>{{data.data.clsify[0].text}}</b></p>
-			<p class="p"><span class="aside-size-text">￥{{data.data.clsify[0].price}}</span><font class="aisde-border">立即购买></font></p>
+			<p class="p"><span class="aside-size-text">￥{{data.data.clsify[0].price}}</span><font class="aisde-border index4-text-color">立即购买></font></p>
 		</div>
 	</div>
 	<div class="aside-div-right aside-text-color">
 		<img ng-src="{{data.data.clsify[1].largelmg}}"  ng-click="detail('productDetailsPage',data.data.clsify[1].pid)"/>
 		<p class="aside-font-size">{{data.data.clsify[1].pname}}</p>
 		<p class="aside-font-b"><b>{{data.data.clsify[1].text}}</b></p>
-		<p><span>￥{{data.data.clsify[1].price}}</span><font class="aisde-border">立即购买></font></p>
+		<p>
+			<span class="index4-text-color">
+				￥{{data.data.clsify[1].price}}
+			</span>
+			<font class="aisde-border">
+				立即购买>
+			</font>
+		</p>
 	</div>
 </div>
 <div class="overflow overflow-border-top">
@@ -177,7 +184,7 @@
 		<img  ng-src="{{data.data.clsify[3].largelmg}}" ng-click="detail('productDetailsPage',data.data.clsify[3].pid)"/>
 		<p class="aside-font-size">{{data.data.clsify[3].pname}}</p>
 		<p class="aside-font-b"><b>{{data.data.clsify[3].text}}</b></p>
-		<p class="aside-size-text"><span>￥{{data.data.clsify[3].price}}</span><font class="aisde-border">立即购买></font></p>
+		<p class="aside-size-text"><span class="index4-text-color">￥{{data.data.clsify[3].price}}</span><font class="aisde-border">立即购买></font></p>
 	</div>
 </div>
 

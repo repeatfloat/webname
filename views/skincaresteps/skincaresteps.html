@@ -2,34 +2,12 @@
 <div class="skincaresteps-margin-top">
 <!-- skincaresteps-content -->
 <div class="row">
-	<div class="col skincaresteps-margin-left">
-		<div class="col-demo">
+	<div class="row skincaresteps-margin-left">
+		<div class="col" ng-repeat="item in data.skincaresteps track by $index">
 			<ion-list>
 				<ion-item class="item-thumbnail-top skincaresteps-content-image">
-					<img src="./icons/skincaresteps-1.png">
-					<span>洁面</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-2.png/">
-					<span>花露</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-3.png">
-					<span>精华</span>
+					<img ng-src="{{item.imgurl}}" ng-click="skincaresteps('productDetailsPage',item.did)">
+					<span>{{item.name}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
@@ -37,74 +15,30 @@
 </div>
 <!-- skincaresteps-content -->
 <div class="row">
-	<div class="col skincaresteps-margin-left">
-		<div class="col-demo">
+	<div class="row skincaresteps-margin-left">
+		<div class="col" ng-repeat="item in data.skincaresteps1 track by $index">
 			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-6.png">
-					<span>乳液</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-5.png">
-					<span>眼霜</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-4.png">
-					<span>身体护理</span>
+				<ion-item class="item-thumbnail-top skincaresteps-content-image">
+					<img ng-src="{{item.imgurl}}" ng-click="skincaresteps('productDetailsPage',item.did)">
+					<span>{{item.name}}</span>
 				</ion-item>
 			</ion-list>
 		</div>
 	</div>
 </div>
 <!-- skincaresteps-content -->
- <div class="row">
-	<div class="col skincaresteps-margin-left">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-7.png">
-					<span>手部护理</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top  skincaresteps-content-image">
-					<img src="./icons/skincaresteps-8.png">
-					<span>面霜</span>
-				</ion-item>
-			</ion-list>
-		</div>
-	</div>
-
-	<div class="col">
-		<div class="col-demo">
-			<ion-list>
-				<ion-item class="item-thumbnail-top skincaresteps-content-image">
-					<img src="./icons/skincaresteps-9.png">
-					<span>面膜</span>
-				</ion-item>
-			</ion-list>
-		</div>
+<div class="row">
+ <div class="row skincaresteps-margin-left">
+	<div class="col" ng-repeat="item in data.skincaresteps2 track by $index">
+		<ion-list>
+			<ion-item class="item-thumbnail-top skincaresteps-content-image">
+				<img ng-src="{{item.imgurl}}" ng-click="skincaresteps('productDetailsPage',item.did)">
+				<span>{{item.name}}</span>
+			</ion-item>
+		</ion-list>
 	</div>
  </div>
+</div>
 </div>
 </div>
 

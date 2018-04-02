@@ -29,16 +29,23 @@ angular.module('app')
 
 			})
 			.catch(function (err) {
-				console.log(err);
+				// console.log(err);
 	})
 
-		$scope.shopping = function () {
-			API.fetchGet('http://127.0.0.1:9000/pendingPayment',$rootScope.shopp)
-				.then(function () {
-				})
+	$scope.productList2=function(){
+		$state.go('publicfooter.settlement')
+		API.fetchGet('http://127.0.0.1:9000/settlement',$rootScope.shopp)
+			.then(function () {
+		})
+	}
 
-			tip.showTip('购买成功 亲请支付');
-			$state.go('pendingPayment');
+	$scope.shopping = function () {
+		tip.showTip('购买成功 亲请支付');
+		$state.go('pendingPayment');
+		API.fetchGet('http://127.0.0.1:9000/pendingPayment',$rootScope.shopp)
+			.then(function () {
+			})
 		}
+	
 
 	}])

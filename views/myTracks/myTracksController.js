@@ -1,5 +1,5 @@
 angular.module('app')
-	.controller('myTracksController', ['$scope','$state', function ($scope,$state) {
+	.controller('myTracksController', ['$scope','$state', 'API',function ($scope,$state,API) {
 
 		$scope.myTracks=function(url){
 			$state.go(url)
@@ -38,5 +38,11 @@ angular.module('app')
 			imades3:'./icons/myTracks-12.png',
 			text3:'￥ 110.00',},
 		]
+
+		API.fetchGet('http://127.0.0.1:9000/pendingDelivery')
+				.then(function (data) {
+				$scope.code = data.data;
+				console.log($scope.code)
+			})
 
 	}])

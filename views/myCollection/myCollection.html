@@ -1,5 +1,5 @@
-<div>
 <ion-content>
+<div class="mycollection8-bg-div">
 	<div class="row myCollection-top-border" ng-click="mycollection('publicfooter.midea')">
 		<div class="col">
 			<i class="icon ion-android-arrow-back"></i>
@@ -14,7 +14,7 @@
 
 	<div class="row myCollection7-div-margin">
 		<div class="col myCollection2-div-position">
-			<input type="text" name="" placeholder="在我的收藏里搜索"/>
+			<input class="mycollection9-border-color" type="text" name="" placeholder="在我的收藏里搜索"/>
 			<span>搜索</span>
 			<img src="./icons/index-2.png"/>
 		</div>
@@ -24,33 +24,73 @@
 		</div>
 	</div>
 
-	<div class="row myCollection6-div-p-text-align" ng-repeat="x in product track by $index">
-		<div class="col col-20 myCollection4-div-image-size">
-			<img ng-src="{{x.image}}"/>
+	<div class="row myCollection6-div-p-text-align" ng-repeat="x in data.settlement track by $index">
+		<div class="col col-25 myCollection4-div-image-size">
+			<img ng-src="{{x.imgurl}}"/>
 		</div>
 
 		<div class="col">
 
-			<p>{{x.text}}</p>
+			<p>{{x.name}}</p>
 
 			<div class="row">
 				<div class="col">
-					<p class="myCollection2-p-text-align">{{x.span}}
-					<span class="spanBorder-color">{{x.spanBorder}}</span>
+					<p class="myCollection2-p-text-align">在线下单
+					<span class="spanBorder-color">包邮</span>
 					</p>
 				</div>
 
-				<div class="col myCollection5-div-icons-color">
+				<div class="col myCollection5-div-icons-color" ng-click="deletes2(x)">
 					<p><i class="icon ion-ios-star"></i></p>
-					<p>{{x.spanText}}</p>
+					<p>取消收藏</p>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col">
 					<p>
-						<span class="productTextcolor">{{x.productText}}</span>
-						<span>{{x.textColor}}</span>
+						<span class="productTextcolor">￥{{x.price}}</span>
+						<span class="myCollection4-pstion-span">999人付款</span>
+					</p>
+				</div>
+
+				<div class="col col-33">
+					<i class="icon ion-android-cart productTextcolor"></i>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="row myCollection6-div-p-text-align" ng-repeat="itme in data.collection track by $index">
+		<div class="col col-25 myCollection4-div-image-size">
+			<img ng-src="{{itme.imgurl}}"/>
+		</div>
+
+		<div class="col">
+
+			<p>{{itme.name}}</p>
+
+			<div class="row">
+				<div class="col">
+					<p class="myCollection2-p-text-align">在线下单
+					<span class="spanBorder-color">包邮</span>
+					</p>
+				</div>
+
+				<div class="col myCollection5-div-icons-color" ng-click="deletes(itme)">
+					<p><i class="icon ion-ios-star"></i></p>
+					<p>取消收藏</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<p>
+						<span class="productTextcolor">￥{{itme.price}}</span>
+						<span class="myCollection4-pstion-span">999人付款</span>
 					</p>
 				</div>
 
@@ -68,5 +108,5 @@
 			<p><i class="icon ion-arrow-up-a"></i></p>
 		</div>
 	</div>
-</ion-content>
 </div>
+</ion-content>

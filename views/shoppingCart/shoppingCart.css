@@ -48,10 +48,10 @@
 	.icons-align i{color: #f7c94d;}
 	.shoppingCart-color i{color: #ff0000;}
 	.product-text-color{color: #fe0000; padding-right: 20px;}
-	.footer-background-color{background-color: #e60012; color: #fff;
-		text-align: center;}
+.footer-background-color{background-color: #e60012; color: #fff; text-align: center;}
 
 .shoppingcart-footer{height: 50px;}
 	.footer-input{line-height: 20px;}
-.footer-input input{margin-left: 10px;}
-
+	.shoppingcart2-text-align{text-align: right; color: #777;}
+	.shoppingcart3-footer-input{display: inline-block !important; width: 100% !important; height: 100% 
+!important; border: 1px solid #ddd !important; text-indent: 5px; border-radius:5px;}

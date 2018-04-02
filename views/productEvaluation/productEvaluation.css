@@ -1,30 +1,29 @@
 div p{margin: 0;}
 .product-top-position img{width: 20px; height: 20px; position: fixed; top: 10px; left: 10px; z-index: 2;}
 				
-		.full-image{width:100%; height: 200px; display: block; margin: 0 auto;}
+		.productEvaluation9-full-image{width:100%; height: 200px; display: block; margin: 0 auto;}
 		
 .productEvaluation-icons-color{color: #ec0087;}
 	.productEvaluation-p-position{position: relative;display: block; text-align: center;}
 	.productEvaluation-position-hr{position: absolute; top: 9.5px; width: calc(50% - 55px); border: 1px solid #ddd;}
-	.hr-left{left: 2px;}
-	.hr-right{right: 2px;}
-	.text-color-margin{margin: 0; color: #c000a7;}
-	.box-padding-left{padding: 0;}
-	.overflow-height{height: 22px; overflow: hidden;}
-	.text-border-right p{border: 1px solid #ff00ff;}
-	.text-border-right p{margin: 5px 0; text-align: center;}
-	.box-padding-right{padding: 0;}
-	.box-img{padding: 0; text-indent: 4em; border: 0px; line-height: 20px;
-	height: 50px !important;}
-	.box-img img{width: 40px !important; height: 40px !important;}
-	.center-height{height: 50px;}
-.icons-color i{color: #ddd;}
+	.productEvaluation10-hr-left{left: 2px;}
+	.productEvaluation10-hr-right{right: 2px;}
+	.productEvaluation11-text-margin{margin: 0; color: #c000a7;}
+	.productEvaluation12-padding-left{padding: 0;}
+	.productEvaluation13-overflow-height{height: 22px; overflow: hidden;}
+	.productEvaluation14-text-right p{border: 1px solid #ff00ff; margin: 5px 0; text-align: center;}
+	.productEvaluation15-box-padding-right{padding: 0;}
+	.productEvaluation16-box-img{padding: 0; text-indent: 4em; border: 0px; line-height: 20px;
+	height: 50px !important; background-color: #ddd; min-height: 50px !important;}
+	.productEvaluation16-box-img img{width: 40px !important; height: 40px !important;}
+	.productEvaluation17-center-height{height: 50px;}
+.productEvaluation18-icons-color i{color: #ddd;}
 
-.footer-text-sizes p{font-size: 12px; text-align: center; margin: 0;}
-	.footer-text-sizes i{display: block; text-align: center;}
-	.footer-border-lefts{background-color: #ff9000;  line-height: 40px; border-radius: 10px;}
-.footer-border-rights{background-color: #ff0000;  line-height: 40px; border-radius: 10px;}
+.productEvaluation19-footer-text-sizes p{font-size: 12px; text-align: center; margin: 0;}
+	.productEvaluation19-footer-text-sizes i{display: block; text-align: center;}
+	.productEvaluation20-footer-border-lefts{background-color: #ff9000;  line-height: 40px; border-radius: 10px;}
+	.productEvaluation20-footer-border-rights{background-color: #ff0000;  line-height: 40px; border-radius: 10px;}
+	.productEvaluation-7-bg-color{background-color: #ddd; color:#777;}
+	.productEvaluation-8-text-color{color: #fff;}
 
-
-.scroll-content{position: relative!important;}
 

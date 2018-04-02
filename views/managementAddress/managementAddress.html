@@ -1,5 +1,4 @@
-<div>
-<ion-content>
+<ion-content class="managementAddress8-div-bg-color">
 	<div class="row managementAddress2-top-border">
 		<div class="col" ng-click="addOclick('publicfooter.midea')">
 			<i class="icon ion-android-arrow-back"></i>
@@ -14,24 +13,26 @@
 
 	
 
-<div ng-repeat="x in address track by $index">
+<div ng-repeat="x in pending.addre track by $index">
 
 	  <div class="row">
 		<div class="col">
 			<p class="managementAddress3-p-text-align">{{x.username}} <span>{{x.phone}}</span></p>
-			<p class="managementAddress3-p-text-align" ng-bind="x.addres"></p>
+			<p class="managementAddress3-p-text-align"> {{x.province}} {{x.city}} {{x.region}} </p>
+			<p class="managementAddress9-text-color">详细地址 : {{x.setadd}}</p>
 		</div>
 
 		<div class="col col-20 managementAddress2-div-right">
 			<p class="managementAddress2-p-icons-align"><i class="icon ion-compose"></i></p>
-			<p ng-bind="x.editAddress"></p>
+			<p>{{x.editAddress}}</p>
 		</div>
 	  </div>
 
 	  <div class="row managementAddress4-div-border">
 	  	<div class="col managementAddress3-div-footer-text-color" ng-class="{'item-first':$first}">
 	  		<p class="managementAddress4-p-text-indent a">
-	  			<i class="icon ion-android-checkbox-outline"></i>{{x.selectAddress}}
+	  			<i class="icon ion-android-checkbox-outline"></i>
+	  			{{x.selectAddress}}
 	  		</p>
 	  	</div>
 
@@ -39,28 +40,17 @@
 	  		<img src="./icons/managementAddress-1.png"/>
 	  	</div>
 
-	  	<div class="col"  ng-click="deletes($index)">
-	  		<p class="managementAddress4-p-text-indent">
+	  	<div class="col">
+	  		<p class="managementAddress4-p-text-indent" ng-click="deletes($index)">
 	  			<i class="icon ion-ios-trash-outline"></i>
 	  			{{x.delete}}
 	  		</p>
 	  	</div>
 	  </div>
 </div>
-	<div class="row managementAddress7-div-position">
-		<div class="col managementAddress7-div-div-position">
-			<p class="managementAddress7-div-button-position" ng-disabled="abl" ng-click="add()">
-			确定添加
-			</p>
-		</div>
-	</div>
-
 	<div class="row managementAddress6-div-footer-position" >
 		<div class="col" ng-click="addOclick('newlyIncreasedAddress')">
 			<p>新增收货地址</p>
 		</div>
-	</div>
-
-	
+	</div>	
 </ion-content>
-</div>

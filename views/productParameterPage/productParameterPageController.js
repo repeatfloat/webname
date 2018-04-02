@@ -22,10 +22,9 @@ angular.module('app')
 			.then(function (data) {
 				
 				$scope.data = data;
-				console.log(data)
+				// console.log(data)
 			})
 			.catch(function (err) {
-				// tip.loadTips.hideLoading();
 				console.log(err);
 			})
 	$scope.productList2=function(url,id){

@@ -1,19 +1,24 @@
-<div class="boxscheme-div-margin">
-<div class="row boxscheme-text-align" ng-repeat="item in scheme track by $index">
-	<div class="col">
-		<p><img ng-src="{{item.image}}"/></p>
-		<p>{{item.text}}</p>
-	</div>
-
-
-	<div class="col">
-		<p><img ng-src="{{item.image1}}"/></p>
-		<p>{{item.text1}}</p>
-	</div>
-
-	<div class="col">
-		<p><img ng-src="{{item.image2}}"/></p>
-		<p>{{item.text2}}</p>
+<div class="scheme-margin-left">
+<div class="row">
+	<div class="col" ng-repeat="item in data.scheme track by $index">
+		<ion-list>
+			<ion-item class="item-thumbnail-top  scheme2-content-image">
+				<img class="scheme4-img" ng-src="{{item.imgurl}}" ng-click="scheme2('productDetailsPage',item.did)">
+				<span class="scheme3-span">{{item.name}}</span>
+			</ion-item>
+		</ion-list>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col" ng-repeat="item in data.scheme1 track by $index">
+		<ion-item class="item-thumbnail-top  scheme2-content-image">
+			<img class="scheme4-img" ng-src="{{item.imgurl}}" ng-click="scheme2('productDetailsPage',item.did)">
+			<span class="scheme3-span">{{item.name}}</span>
+		</ion-item>
+	</div>
+</div>
+
+
+
 </div>

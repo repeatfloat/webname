@@ -6,7 +6,8 @@ p{margin: 0;}
 	background-repeat: no-repeat; background-size: cover;
 	animation: images 15s linear 0s infinite alternate;}
 	.nth-p-text-align{text-align: center; width: 100%; font-size: 16px; color: #cf0298;}
-	.nth2-p-text-color{color: #cf0298; text-align: center; padding: 5px 0;}
+	.nth18-user-text{color: #cf0298; text-align: center; padding: 5px 0;}
+	.nth2-p-text-color{color: #777; text-align: center; padding: 5px 0;}
 	.nth-span-text-color{color: #bd8a00;}
 	.nth-midea-images{width: 50px; height: 50px; display: block; margin: 0 auto;
 		border-radius: 50%; padding: 5px 0;}
@@ -24,11 +25,11 @@ p{margin: 0;}
 	.nth3-p-position {text-indent: 30px;}
 	.nth3-p-position img{position: absolute;top: 0; left: 0; width: 20px;
 		height: 20px;}
-	.nth4-p-text-align{text-align: center; height: 20px; overflow: hidden;}
+	.nth4-p-text-align{text-align: center; height: 20px; overflow: hidden; color: #777;}
 	.nth2-image-size{width: 20px; height: 20px; display: block; margin: 0 auto;}
 	.nth6-div-border{border-bottom: 1px solid #e5e5e5;}
 	.nth3-image-center{width: 20px !important; height: 20px !important; top: 0 !important;}
-	.nth5-p-center-ul{text-indent: 40px;}
+	.nth5-p-center-ul{text-indent: 40px; background-color: #ddd; color: #777;}
 	.ul-margin-top-first{margin: 0px !important;}
 .nth-ino-minheigth-border{border: 0px; padding: 0; min-height: 20px;}
 
@@ -38,7 +39,8 @@ margin: auto; background-color: #df0073; color: #fff; width: 80%; height: 40px;
 display: inline-block; line-height: 20px; padding-top: 12px; text-align: center;
 border-radius: 10px;}
 .midea-footer{height: 50px;}
-
+#midea-16-bgimage{background-color: #ddd; z-index: 2;}
+.midea-17-text-color{color: #777;}
 
 	/*@keyframes images{
 			0% {
