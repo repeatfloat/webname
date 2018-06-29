@@ -20,7 +20,7 @@ angular.module('app')
 		$scope.getcode=function(){
 			console.log($scope.userInfo)
 			tip.loadTips.showLoading();
-			API.fetchGet('http://127.0.0.1:9000/message',{phone: $scope.userInfo.phone})
+			API.fetchGet('http://127.0.0.1:5000/message',{phone: $scope.userInfo.phone})
 				.then(function (data) {
 				console.log(data)
 				tip.loadTips.hideLoading();

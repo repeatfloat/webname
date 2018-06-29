@@ -2,7 +2,6 @@ angular.module('app')
 	.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/startPage');
 		$stateProvider
-
 				.state('publicfooter', {
 				url: '/publicfooter',
 				abstruct: true,

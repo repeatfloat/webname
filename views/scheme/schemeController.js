@@ -20,7 +20,7 @@ angular.module('app')
 			},
 		];
 
-		API.fetchGet('http://127.0.0.1:9000/scheme')
+		API.fetchGet('http://127.0.0.1:5000/scheme')
 			.then(function (data) {
 				$scope.data = data.data;
 				// console.log(data)

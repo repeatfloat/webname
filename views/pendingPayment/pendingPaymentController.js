@@ -1,9 +1,10 @@
 angular.module('app')
 	.controller('pendingPaymentController', ['$scope','$state','API','$rootScope','tip',function ($scope,$state,API,$rootScope,tip) {
 				
-			API.fetchGet('http://127.0.0.1:9000/pendingPayment')
+			API.fetchGet('http://127.0.0.1:5000/pendingPayment')
 				.then(function (data) {
 				$scope.code = data.data;
+				console.log($scope.code);
 			})
 
 
@@ -35,7 +36,7 @@ angular.module('app')
 				
 				$scope.payment = function (item) {
 				$state.go('publicfooter.compiler',{item: item});
-				API.fetchGet('http://127.0.0.1:9000/compiler',item)
+				API.fetchGet('http://127.0.0.1:5000/compiler',item)
 					.then(function () {
 					})
 				}

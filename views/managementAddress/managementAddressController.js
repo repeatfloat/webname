@@ -47,7 +47,7 @@ angular.module('app')
     			$window.location.reload();
 			};
 
-			API.fetchGet('http://127.0.0.1:9000/newlyIncreasedAddress')
+			API.fetchGet('http://127.0.0.1:5000/newlyIncreasedAddress')
 				.then(function (data) {
 				$scope.pending = data.data;
 				// console.log($scope.pending)
@@ -65,7 +65,7 @@ angular.module('app')
 			}
 			$scope.deletes=function(index){
 				$scope.reloadRoute()
-				API.fetchGet('http://127.0.0.1:9000/managementAddress',$scope.pending.addre[index])
+				API.fetchGet('http://127.0.0.1:5000/managementAddress',$scope.pending.addre[index])
 				.then(function () {
 				})
 			};

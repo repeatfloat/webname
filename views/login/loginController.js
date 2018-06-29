@@ -13,9 +13,10 @@ angular.module('app')
 		$scope.usersignin=function(){
 		//验证号码是否正确
 		if (!isValid()) {return}
-		API.fetchPost('http://127.0.0.1:9000/login', $scope.userInfo)
+		API.fetchPost('http://127.0.0.1:5000/login', $scope.userInfo)
 			.then(function (data) {
 			//判断是否登录成功301,302.代表失败
+			console.log(data);
 			if (data.data.statusCode == 301 || data.data.statusCode == 302) {
 				tip.showTip(data.data.msg);
 			} else {

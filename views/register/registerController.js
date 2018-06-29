@@ -22,7 +22,7 @@ angular.module('app')
 			tip.loadTips.showLoading();
 			if (!isValid()) {return tip.loadTips.hideLoading();};
 			$scope.userInfo.registerTime = formatTime.format(new Date(), 'yyyy-MM-dd hh:mm:ss');
-			API.fetchPost('http://127.0.0.1:9000/register',$scope.userInfo)
+			API.fetchPost('http://127.0.0.1:5000/register',$scope.userInfo)
 			.then(function(data){
 				if(data.data.statusCode == 201 || data.data.statusCode == 202){
 					tip.showTip(data.data.msg);
@@ -43,8 +43,8 @@ angular.module('app')
 		}
 
 		$scope.getCode = function () {
-			tip.loadTips.showLoading();
-			API.fetchGet('http://127.0.0.1:9000/message',{phone: $scope.userInfo.phone})
+			// tip.loadTips.showLoading();
+			API.fetchGet('http://127.0.0.1:5000/message',{phone: $scope.userInfo.phone})
 				.then(function (data) {
 				$scope.code = data.data.code;
 				console.log($scope.code)

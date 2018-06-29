@@ -59,7 +59,7 @@ angular.module('app')
 		// 		footertext:'333人付款',
 		// 	},
 		// ];
-		API.fetchGet('http://127.0.0.1:9000/settlement')
+		API.fetchGet('http://127.0.0.1:5000/settlement')
 			.then(function (dete) {
 				$scope.dete=dete.data;
 				console.log($scope.dete.settlement)
@@ -115,7 +115,7 @@ angular.module('app')
 		$scope.setpayment = function () {
 			for(var i=0;i<$scope.dete.settlement.length;i++){
 					if($scope.dete.settlement[i].check == true){
-						API.fetchGet('http://127.0.0.1:9000/compiler',$scope.dete.settlement[i])
+						API.fetchGet('http://127.0.0.1:5000/compiler',$scope.dete.settlement[i])
 						.then(function () {
 				})
 						console.log($scope.dete.settlement[i])

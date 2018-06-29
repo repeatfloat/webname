@@ -18,7 +18,7 @@ angular.module('app')
 		$state.go(url)
 	}
 			
-	API.fetchGet('http://127.0.0.1:9000/index')
+	API.fetchGet('http://127.0.0.1:5000/index')
 			.then(function (data) {
 				
 				$scope.data = data;

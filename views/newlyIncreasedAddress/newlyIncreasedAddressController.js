@@ -19,7 +19,7 @@ angular.module('app')
 					// {
 					// 	return;
 					// }else
-					API.fetchGet('http://127.0.0.1:9000/newlyIncreasedAddress',$scope.userInfos)
+					API.fetchGet('http://127.0.0.1:5000/newlyIncreasedAddress',$scope.userInfos)
 					.then(function () {
 					})
 

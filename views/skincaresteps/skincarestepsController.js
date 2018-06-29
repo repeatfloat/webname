@@ -1,6 +1,6 @@
 angular.module('app') 
 	.controller('skincarestepsController', ['$scope', '$state','$stateParams','API',function ($scope,$state,$stateParams,API) { 
-		API.fetchGet('http://127.0.0.1:9000/skincaresteps')
+		API.fetchGet('http://127.0.0.1:5000/skincaresteps')
 		.then(function (data) {
 			$scope.data = data.data;
 			// console.log(data)

@@ -50,7 +50,7 @@
 		$scope.reloadRoute = function () {
     			$window.location.reload();
 			};
-		API.fetchGet('http://127.0.0.1:9000/mycollection')
+		API.fetchGet('http://127.0.0.1:5000/mycollection')
 			.then(function (data) {
 				$scope.data=data.data;
 				// console.log(data)
@@ -58,14 +58,14 @@
 		$scope.deletes=function(index){
 			console.log(index)
 			$scope.reloadRoute()
-			API.fetchGet('http://127.0.0.1:9000/mycollection',index)
+			API.fetchGet('http://127.0.0.1:5000/mycollection',index)
 			.then(function () {
 			})
 		};
 		$scope.deletes2=function(index){
 			// console.log(index)
 			$scope.reloadRoute()
-			API.fetchGet('http://127.0.0.1:9000/shoppingCart',index)
+			API.fetchGet('http://127.0.0.1:5000/shoppingCart',index)
 			.then(function () {
 			})
 		};

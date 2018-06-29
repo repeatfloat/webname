@@ -21,30 +21,30 @@ angular.module('app')
 			$state.go('productParameterPage')
 	}
 		console.log($stateParams);
-	API.fetchGet('http://127.0.0.1:9000/productdetail',{id: $stateParams.id})
+	API.fetchGet('http://127.0.0.1:5000/productdetail',{id: $stateParams.id})
 			.then(function (data) {
-				$rootScope.data = data.data;
-				console.log(data);
+			$rootScope.data = data.data;
 			$rootScope.shopp=[$rootScope.data.product[0].name,$rootScope.data.product[0].price, $rootScope.data.product[0].did, $rootScope.data.product[0].imgurl, $rootScope.data.product[0].code, $rootScope.data.product[0].addres,$rootScope.data.product[0].sales,$rootScope.data.product[0].farg,$rootScope.data.product[0].numprice];
 
 			})
 			.catch(function (err) {
-				// console.log(err);
+				console.log(err);
 	})
 
 	$scope.productList2=function(){
 		$state.go('publicfooter.settlement')
-		API.fetchGet('http://127.0.0.1:9000/settlement',$rootScope.shopp)
+		API.fetchGet('http://127.0.0.1:5000/settlement',$rootScope.shopp)
 			.then(function () {
 		})
 	}
 
 	$scope.shopping = function () {
+		console.log($rootScope.data.product[0]);
 		tip.showTip('购买成功 亲请支付');
-		$state.go('pendingPayment');
-		API.fetchGet('http://127.0.0.1:9000/pendingPayment',$rootScope.shopp)
+		API.fetchGet('http://127.0.0.1:5000/pendingPayment',$rootScope.shopp)
 			.then(function () {
 			})
+		$state.go('pendingPayment');
 		}
 	
 

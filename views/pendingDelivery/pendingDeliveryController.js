@@ -38,7 +38,7 @@ angular.module('app')
 
 			
 	
-			API.fetchGet('http://127.0.0.1:9000/pendingDelivery')
+			API.fetchGet('http://127.0.0.1:5000/pendingDelivery')
 				// console.log($rootScope.shoppss)
 				.then(function (data) {
 				$scope.pending = data.data;

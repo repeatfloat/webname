@@ -1,7 +1,7 @@
 angular.module('app')
 	.controller('compilerController', ['$scope','$state','API','$rootScope','tip', function ($scope,$state,API,$rootScope,tip) {
 
-		API.fetchGet('http://127.0.0.1:9000/compiler')
+		API.fetchGet('http://127.0.0.1:5000/compiler')
 			.then(function (data) {
 			$scope.data = data.data;
 			// console.log($scope.data)
@@ -63,7 +63,7 @@ angular.module('app')
 		$scope.compiles=function(){
 		for(var i=0;i<$scope.data.compiler.length;i++){
 			if($scope.data.compiler[i].check == true){
-			API.fetchGet('http://127.0.0.1:9000/pendingDelivery',$scope.data.compiler[i])
+			API.fetchGet('http://127.0.0.1:5000/pendingDelivery',$scope.data.compiler[i])
 			.then(function () {
 				})
 		console.log($scope.data.compiler[i])

@@ -3,7 +3,7 @@
 		$scope.settlement=function(url){
 			$state.go(url)
 		}
-		API.fetchGet('http://127.0.0.1:9000/index')
+		API.fetchGet('http://127.0.0.1:5000/index')
 			.then(function (data) {
 			$scope.data = data;
 				console.log(data)
@@ -84,7 +84,7 @@
 				console.log(err);
 			})
 
-			API.fetchGet('http://127.0.0.1:9000/shoppingCart')
+			API.fetchGet('http://127.0.0.1:5000/shoppingCart')
 			.then(function (dete) {
 				$scope.dete=dete;
 				// console.log(dete)
@@ -124,13 +124,15 @@
 		};
 
 		$scope.collections=function(index){
-			API.fetchGet('http://127.0.0.1:9000/myCollection',$scope.shopping[index])
+			console.log(index)
+			var iconColor=document.getElementsByClassName('iconColor');
+			iconColor[index].className="icon ion-star icons-color text-padding-left"
+			API.fetchGet('http://127.0.0.1:5000/myCollection',$scope.shopping[index])
 			.then(function () {
 			})
-			console.log($scope.shopping[index])
 		}
 		$scope.collection2=function(index){
-			API.fetchGet('http://127.0.0.1:9000/shoppingCart',index)
+			API.fetchGet('http://127.0.0.1:5000/shoppingCart',index)
 			.then(function () {
 			})
 			console.log(index)

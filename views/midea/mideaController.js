@@ -28,7 +28,7 @@ angular.module('app')
 			{box:1}
 		]
 		$scope.signIn=function(){
-			API.fetchPost('http://127.0.0.1:9000/midea',$rootScope.userInfo.isLogin)
+			API.fetchPost('http://127.0.0.1:5000/midea',$rootScope.userInfo.isLogin)
 			$state.go('login')
 			.then(function (data) {
 				//用户不登录状态
